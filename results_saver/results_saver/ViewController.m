@@ -20,247 +20,81 @@
 
 - (void)viewDidLoad
 {
+    //initialize answers array
+    for(int i = 0; i < 40; i++){
+        answers[i] = -1;
+    }
+    
     fm = [NSFileManager defaultManager];
     [textView setText:@"Press the Button!"];
+    
+    //create the filepath
+    paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docDir = [paths objectAtIndex:0];
+    filePath = [docDir stringByAppendingPathComponent:@"answers.txt"]; 
+    //create the answer file
+    [fm createFileAtPath:filePath contents:nil attributes:nil];
+    
     [super viewDidLoad];
+    
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(IBAction)q1Yes:(id)sender
+//event handler for recording answer when an answer button is selected.
+-(IBAction)answer:(id)sender
 {
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+    UIButton *button = (UIButton *)sender;
+    NSString *buttonTitle = button.currentTitle;
         
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q1 - YES!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
+    if([buttonTitle isEqualToString:@"Yes"]){
+        NSLog(@"YES!");
+        answers[button.tag] = 1;
+    } else if([buttonTitle isEqualToString:@"No"]){
+        NSLog(@"NO!");
+        answers[button.tag] = 0;
+    } else if([buttonTitle isEqualToString:@"Maybe"]){
+        NSLog(@"MAYBE!");
+        answers[button.tag] = 2;
+    } else if([buttonTitle isEqualToString:@"I don't know"]){
+        NSLog(@"I DON'T KNOW!");
+        answers[button.tag] = 3;
     }
     
+    NSLog(@"index %d: %d", button.tag, answers[button.tag]);
 }
 
--(IBAction)q1No:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
+//event handler for when submit button is selected to write results to file.
+-(IBAction)submit:(id)sender
+{
     if ([fm fileExistsAtPath:filePath]) {
         //create file handle
         NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
         
         if(myHandle == nil){
+            exit(0);
             //failed to open file
         }
-        NSString *content = @"Q1 - NO!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
+                
+        //concatenate answers into one single string, answerString
+        NSMutableString *answerString = [NSMutableString string];
+        int i = 0;
+        while(answers[i] != -1){
+            [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
+            i++;
+        }
+        
+        //write the answers to file
+        NSData *theData = [answerString dataUsingEncoding:NSUTF8StringEncoding];
         [myHandle seekToEndOfFile];
         [myHandle writeData:theData];
         [myHandle closeFile];
         
+        //display file contents on screen
         [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
     }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
 }
--(IBAction)q1Maybe:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q1 - MAYBE!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
--(IBAction)q1IDK:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q1 - IDK!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
--(IBAction)q2Yes:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q2 - YES!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
--(IBAction)q2No:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q2 - NO!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
--(IBAction)q2Maybe:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q2 - MAYBE!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
--(IBAction)q2IDK:(id)sender{
-    //create the filepath
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docDir = [paths objectAtIndex:0];
-    NSString *filePath = [docDir stringByAppendingPathComponent:@"testFile.txt"];
-    
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            //failed to open file
-        }
-        NSString *content = @"Q2 - IDK!\n";
-        NSData *theData = [content dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-    }
-    else {
-        //The file doesn't exist
-        [textView setText:@"File doesn't exist!"];
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    
-    
-}
-
-
 
 - (void)viewDidUnload
 {

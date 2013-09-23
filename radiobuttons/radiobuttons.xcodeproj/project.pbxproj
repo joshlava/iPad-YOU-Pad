@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F81AD617F059A70092A8C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AD517F059A70092A8C0 /* UIKit.framework */; };
+		84F81AD817F059A70092A8C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AD717F059A70092A8C0 /* Foundation.framework */; };
+		84F81ADA17F059A70092A8C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AD917F059A70092A8C0 /* CoreGraphics.framework */; };
+		84F81AE017F059A80092A8C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F81ADE17F059A80092A8C0 /* InfoPlist.strings */; };
+		84F81AE217F059A80092A8C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F81AE117F059A80092A8C0 /* main.m */; };
+		84F81AE617F059A80092A8C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F81AE517F059A80092A8C0 /* AppDelegate.m */; };
+		84F81AE917F059A80092A8C0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F81AE717F059A80092A8C0 /* MainStoryboard_iPhone.storyboard */; };
+		84F81AEC17F059A80092A8C0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F81AEA17F059A80092A8C0 /* MainStoryboard_iPad.storyboard */; };
+		84F81AEF17F059A80092A8C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F81AEE17F059A80092A8C0 /* ViewController.m */; };
+		84F81AF717F059A80092A8C0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AF617F059A80092A8C0 /* SenTestingKit.framework */; };
+		84F81AF817F059A80092A8C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AD517F059A70092A8C0 /* UIKit.framework */; };
+		84F81AF917F059A80092A8C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F81AD717F059A70092A8C0 /* Foundation.framework */; };
+		84F81B0117F059A80092A8C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F81AFF17F059A80092A8C0 /* InfoPlist.strings */; };
+		84F81B0417F059A80092A8C0 /* radiobuttonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F81B0317F059A80092A8C0 /* radiobuttonsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F81AFA17F059A80092A8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F81AC817F059A70092A8C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F81AD017F059A70092A8C0;
+			remoteInfo = radiobuttons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F81AD117F059A70092A8C0 /* radiobuttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiobuttons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F81AD517F059A70092A8C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84F81AD717F059A70092A8C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F81AD917F059A70092A8C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84F81ADD17F059A80092A8C0 /* radiobuttons-Info.plist */ = {isa = PBXFileReference; path = "radiobuttons-Info.plist"; sourceTree = "<group>"; };
+		84F81ADF17F059A80092A8C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F81AE117F059A80092A8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F81AE317F059A80092A8C0 /* radiobuttons-Prefix.pch */ = {isa = PBXFileReference; path = "radiobuttons-Prefix.pch"; sourceTree = "<group>"; };
+		84F81AE417F059A80092A8C0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		84F81AE517F059A80092A8C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84F81AE817F059A80092A8C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		84F81AEB17F059A80092A8C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		84F81AED17F059A80092A8C0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		84F81AEE17F059A80092A8C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84F81AF517F059A80092A8C0 /* radiobuttonsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = radiobuttonsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F81AF617F059A80092A8C0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		84F81AFE17F059A80092A8C0 /* radiobuttonsTests-Info.plist */ = {isa = PBXFileReference; path = "radiobuttonsTests-Info.plist"; sourceTree = "<group>"; };
+		84F81B0017F059A80092A8C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F81B0217F059A80092A8C0 /* radiobuttonsTests.h */ = {isa = PBXFileReference; path = radiobuttonsTests.h; sourceTree = "<group>"; };
+		84F81B0317F059A80092A8C0 /* radiobuttonsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = radiobuttonsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F81ACE17F059A70092A8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81AD617F059A70092A8C0 /* UIKit.framework in Frameworks */,
+				84F81AD817F059A70092A8C0 /* Foundation.framework in Frameworks */,
+				84F81ADA17F059A70092A8C0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F81AF117F059A80092A8C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81AF717F059A80092A8C0 /* SenTestingKit.framework in Frameworks */,
+				84F81AF817F059A80092A8C0 /* UIKit.framework in Frameworks */,
+				84F81AF917F059A80092A8C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F81AC617F059A70092A8C0 = {
+			isa = PBXGroup;
+			children = (
+				84F81ADB17F059A70092A8C0 /* radiobuttons */,
+				84F81AFC17F059A80092A8C0 /* radiobuttonsTests */,
+				84F81AD417F059A70092A8C0 /* Frameworks */,
+				84F81AD217F059A70092A8C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F81AD217F059A70092A8C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F81AD117F059A70092A8C0 /* radiobuttons.app */,
+				84F81AF517F059A80092A8C0 /* radiobuttonsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F81AD417F059A70092A8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F81AD517F059A70092A8C0 /* UIKit.framework */,
+				84F81AD717F059A70092A8C0 /* Foundation.framework */,
+				84F81AD917F059A70092A8C0 /* CoreGraphics.framework */,
+				84F81AF617F059A80092A8C0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F81ADB17F059A70092A8C0 /* radiobuttons */ = {
+			isa = PBXGroup;
+			children = (
+				84F81AE417F059A80092A8C0 /* AppDelegate.h */,
+				84F81AE517F059A80092A8C0 /* AppDelegate.m */,
+				84F81AE717F059A80092A8C0 /* MainStoryboard_iPhone.storyboard */,
+				84F81AEA17F059A80092A8C0 /* MainStoryboard_iPad.storyboard */,
+				84F81AED17F059A80092A8C0 /* ViewController.h */,
+				84F81AEE17F059A80092A8C0 /* ViewController.m */,
+				84F81ADC17F059A80092A8C0 /* Supporting Files */,
+			);
+			path = radiobuttons;
+			sourceTree = "<group>";
+		};
+		84F81ADC17F059A80092A8C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F81ADD17F059A80092A8C0 /* radiobuttons-Info.plist */,
+				84F81ADE17F059A80092A8C0 /* InfoPlist.strings */,
+				84F81AE117F059A80092A8C0 /* main.m */,
+				84F81AE317F059A80092A8C0 /* radiobuttons-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F81AFC17F059A80092A8C0 /* radiobuttonsTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F81B0217F059A80092A8C0 /* radiobuttonsTests.h */,
+				84F81B0317F059A80092A8C0 /* radiobuttonsTests.m */,
+				84F81AFD17F059A80092A8C0 /* Supporting Files */,
+			);
+			path = radiobuttonsTests;
+			sourceTree = "<group>";
+		};
+		84F81AFD17F059A80092A8C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F81AFE17F059A80092A8C0 /* radiobuttonsTests-Info.plist */,
+				84F81AFF17F059A80092A8C0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F81AD017F059A70092A8C0 /* radiobuttons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F81B0717F059A80092A8C0 /* Build configuration list for PBXNativeTarget "radiobuttons" */;
+			buildPhases = (
+				84F81ACD17F059A70092A8C0 /* Sources */,
+				84F81ACE17F059A70092A8C0 /* Frameworks */,
+				84F81ACF17F059A70092A8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = radiobuttons;
+			productName = radiobuttons;
+			productReference = 84F81AD117F059A70092A8C0 /* radiobuttons.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F81AF417F059A80092A8C0 /* radiobuttonsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F81B0A17F059A80092A8C0 /* Build configuration list for PBXNativeTarget "radiobuttonsTests" */;
+			buildPhases = (
+				84F81AF017F059A80092A8C0 /* Sources */,
+				84F81AF117F059A80092A8C0 /* Frameworks */,
+				84F81AF217F059A80092A8C0 /* Resources */,
+				84F81AF317F059A80092A8C0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F81AFB17F059A80092A8C0 /* PBXTargetDependency */,
+			);
+			name = radiobuttonsTests;
+			productName = radiobuttonsTests;
+			productReference = 84F81AF517F059A80092A8C0 /* radiobuttonsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F81AC817F059A70092A8C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 84F81ACB17F059A70092A8C0 /* Build configuration list for PBXProject "radiobuttons" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F81AC617F059A70092A8C0;
+			productRefGroup = 84F81AD217F059A70092A8C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F81AD017F059A70092A8C0 /* radiobuttons */,
+				84F81AF417F059A80092A8C0 /* radiobuttonsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F81ACF17F059A70092A8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81AE017F059A80092A8C0 /* InfoPlist.strings in Resources */,
+				84F81AE917F059A80092A8C0 /* MainStoryboard_iPhone.storyboard in Resources */,
+				84F81AEC17F059A80092A8C0 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F81AF217F059A80092A8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81B0117F059A80092A8C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F81AF317F059A80092A8C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F81ACD17F059A70092A8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81AE217F059A80092A8C0 /* main.m in Sources */,
+				84F81AE617F059A80092A8C0 /* AppDelegate.m in Sources */,
+				84F81AEF17F059A80092A8C0 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F81AF017F059A80092A8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F81B0417F059A80092A8C0 /* radiobuttonsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F81AFB17F059A80092A8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F81AD017F059A70092A8C0 /* radiobuttons */;
+			targetProxy = 84F81AFA17F059A80092A8C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F81ADE17F059A80092A8C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F81ADF17F059A80092A8C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84F81AE717F059A80092A8C0 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F81AE817F059A80092A8C0 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		84F81AEA17F059A80092A8C0 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F81AEB17F059A80092A8C0 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		84F81AFF17F059A80092A8C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F81B0017F059A80092A8C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F81B0517F059A80092A8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F81B0617F059A80092A8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F81B0817F059A80092A8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "radiobuttons/radiobuttons-Prefix.pch";
+				INFOPLIST_FILE = "radiobuttons/radiobuttons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84F81B0917F059A80092A8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "radiobuttons/radiobuttons-Prefix.pch";
+				INFOPLIST_FILE = "radiobuttons/radiobuttons-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84F81B0B17F059A80092A8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/radiobuttons.app/radiobuttons";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "radiobuttons/radiobuttons-Prefix.pch";
+				INFOPLIST_FILE = "radiobuttonsTests/radiobuttonsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		84F81B0C17F059A80092A8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/radiobuttons.app/radiobuttons";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "radiobuttons/radiobuttons-Prefix.pch";
+				INFOPLIST_FILE = "radiobuttonsTests/radiobuttonsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F81ACB17F059A70092A8C0 /* Build configuration list for PBXProject "radiobuttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F81B0517F059A80092A8C0 /* Debug */,
+				84F81B0617F059A80092A8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F81B0717F059A80092A8C0 /* Build configuration list for PBXNativeTarget "radiobuttons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F81B0817F059A80092A8C0 /* Debug */,
+				84F81B0917F059A80092A8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F81B0A17F059A80092A8C0 /* Build configuration list for PBXNativeTarget "radiobuttonsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F81B0B17F059A80092A8C0 /* Debug */,
+				84F81B0C17F059A80092A8C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F81AC817F059A70092A8C0 /* Project object */;
+}

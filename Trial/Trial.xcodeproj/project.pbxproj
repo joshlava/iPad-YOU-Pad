@@ -26,6 +26,8 @@
 		DEE6A8AC17F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A817F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png */; };
 		DEE6A8AD17F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A917F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png */; };
 		DEE6A8AF17F12FF900B2A989 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8AE17F12FF900B2A989 /* Bullet-Point.jpg */; };
+		DEE6A8B217F1349E00B2A989 /* ChooseSurvey.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE6A8B117F1349E00B2A989 /* ChooseSurvey.m */; };
+		DEE6A8B517F1351100B2A989 /* ParentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE6A8B417F1351100B2A989 /* ParentInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,10 @@
 		DEE6A8A817F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Checked-checkbox-icon.png"; sourceTree = "<group>"; };
 		DEE6A8A917F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = "<group>"; };
 		DEE6A8AE17F12FF900B2A989 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = "<group>"; };
+		DEE6A8B017F1349E00B2A989 /* ChooseSurvey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseSurvey.h; sourceTree = "<group>"; };
+		DEE6A8B117F1349E00B2A989 /* ChooseSurvey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseSurvey.m; sourceTree = "<group>"; };
+		DEE6A8B317F1351100B2A989 /* ParentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentInfo.h; sourceTree = "<group>"; };
+		DEE6A8B417F1351100B2A989 /* ParentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				DEB3952217E00A7100C9B166 /* parentFollowUp1.m */,
 				DEB3952617E0218900C9B166 /* childFollowUp1.h */,
 				DEB3952717E0218900C9B166 /* childFollowUp1.m */,
+				DEE6A8B017F1349E00B2A989 /* ChooseSurvey.h */,
+				DEE6A8B117F1349E00B2A989 /* ChooseSurvey.m */,
+				DEE6A8B317F1351100B2A989 /* ParentInfo.h */,
+				DEE6A8B417F1351100B2A989 /* ParentInfo.m */,
 			);
 			path = Trial;
 			sourceTree = "<group>";
@@ -213,6 +223,8 @@
 				DE56EB3217DDA17E00FE2E30 /* trialViewController.m in Sources */,
 				DEB3952317E00A7100C9B166 /* parentFollowUp1.m in Sources */,
 				DEB3952817E0218900C9B166 /* childFollowUp1.m in Sources */,
+				DEE6A8B217F1349E00B2A989 /* ChooseSurvey.m in Sources */,
+				DEE6A8B517F1351100B2A989 /* ParentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

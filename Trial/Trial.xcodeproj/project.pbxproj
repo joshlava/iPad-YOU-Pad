@@ -19,12 +19,13 @@
 		DE56EB2C17DDA17E00FE2E30 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE56EB2A17DDA17E00FE2E30 /* MainStoryboard_iPhone.storyboard */; };
 		DE56EB2F17DDA17E00FE2E30 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE56EB2D17DDA17E00FE2E30 /* MainStoryboard_iPad.storyboard */; };
 		DE56EB3217DDA17E00FE2E30 /* trialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56EB3117DDA17E00FE2E30 /* trialViewController.m */; };
-		DE56EB3A17DDA51100FE2E30 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE56EB3817DDA51100FE2E30 /* Very-Basic-Checked-checkbox-icon.png */; };
-		DE56EB3B17DDA51100FE2E30 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE56EB3917DDA51100FE2E30 /* Very-Basic-Unchecked-checkbox-icon.png */; };
 		DEB3952317E00A7100C9B166 /* parentFollowUp1.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB3952217E00A7100C9B166 /* parentFollowUp1.m */; };
-		DEB3952517E0205A00C9B166 /* colourful-kids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEB3952417E0205A00C9B166 /* colourful-kids.jpg */; };
 		DEB3952817E0218900C9B166 /* childFollowUp1.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB3952717E0218900C9B166 /* childFollowUp1.m */; };
-		DEB3952A17E029BD00C9B166 /* CartoonKids(1).gif in Resources */ = {isa = PBXBuildFile; fileRef = DEB3952917E029BD00C9B166 /* CartoonKids(1).gif */; };
+		DEE6A8AA17F12E0A00B2A989 /* CartoonKids(1).gif in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A617F12E0A00B2A989 /* CartoonKids(1).gif */; };
+		DEE6A8AB17F12E0A00B2A989 /* colourful-kids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A717F12E0A00B2A989 /* colourful-kids.jpg */; };
+		DEE6A8AC17F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A817F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png */; };
+		DEE6A8AD17F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8A917F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png */; };
+		DEE6A8AF17F12FF900B2A989 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEE6A8AE17F12FF900B2A989 /* Bullet-Point.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,14 +46,15 @@
 		DE56EB2E17DDA17E00FE2E30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		DE56EB3017DDA17E00FE2E30 /* trialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trialViewController.h; sourceTree = "<group>"; };
 		DE56EB3117DDA17E00FE2E30 /* trialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = trialViewController.m; sourceTree = "<group>"; };
-		DE56EB3817DDA51100FE2E30 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Very-Basic-Checked-checkbox-icon.png"; path = "../../../../../Users/20925708/Downloads/Very-Basic-Checked-checkbox-icon.png"; sourceTree = "<group>"; };
-		DE56EB3917DDA51100FE2E30 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Very-Basic-Unchecked-checkbox-icon.png"; path = "../../../../../Users/20925708/Downloads/Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = "<group>"; };
 		DEB3952117E00A7100C9B166 /* parentFollowUp1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parentFollowUp1.h; sourceTree = "<group>"; };
 		DEB3952217E00A7100C9B166 /* parentFollowUp1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parentFollowUp1.m; sourceTree = "<group>"; };
-		DEB3952417E0205A00C9B166 /* colourful-kids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "colourful-kids.jpg"; path = "../../../../../Users/20925708/Downloads/colourful-kids.jpg"; sourceTree = "<group>"; };
 		DEB3952617E0218900C9B166 /* childFollowUp1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = childFollowUp1.h; sourceTree = "<group>"; };
 		DEB3952717E0218900C9B166 /* childFollowUp1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = childFollowUp1.m; sourceTree = "<group>"; };
-		DEB3952917E029BD00C9B166 /* CartoonKids(1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "CartoonKids(1).gif"; path = "../../../../../Users/20925708/Downloads/CartoonKids(1).gif"; sourceTree = "<group>"; };
+		DEE6A8A617F12E0A00B2A989 /* CartoonKids(1).gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "CartoonKids(1).gif"; sourceTree = "<group>"; };
+		DEE6A8A717F12E0A00B2A989 /* colourful-kids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "colourful-kids.jpg"; sourceTree = "<group>"; };
+		DEE6A8A817F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Checked-checkbox-icon.png"; sourceTree = "<group>"; };
+		DEE6A8A917F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = "<group>"; };
+		DEE6A8AE17F12FF900B2A989 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 		DE56EB1817DDA17E00FE2E30 /* Trial */ = {
 			isa = PBXGroup;
 			children = (
-				DEB3952917E029BD00C9B166 /* CartoonKids(1).gif */,
-				DEB3952417E0205A00C9B166 /* colourful-kids.jpg */,
-				DE56EB3817DDA51100FE2E30 /* Very-Basic-Checked-checkbox-icon.png */,
-				DE56EB3917DDA51100FE2E30 /* Very-Basic-Unchecked-checkbox-icon.png */,
+				DEE6A8AE17F12FF900B2A989 /* Bullet-Point.jpg */,
+				DEE6A8A617F12E0A00B2A989 /* CartoonKids(1).gif */,
+				DEE6A8A717F12E0A00B2A989 /* colourful-kids.jpg */,
+				DEE6A8A817F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png */,
+				DEE6A8A917F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png */,
 				DE56EB2117DDA17E00FE2E30 /* trialAppDelegate.h */,
 				DE56EB2217DDA17E00FE2E30 /* trialAppDelegate.m */,
 				DE56EB2A17DDA17E00FE2E30 /* MainStoryboard_iPhone.storyboard */,
@@ -190,10 +193,11 @@
 				DE56EB2917DDA17E00FE2E30 /* Default-568h@2x.png in Resources */,
 				DE56EB2C17DDA17E00FE2E30 /* MainStoryboard_iPhone.storyboard in Resources */,
 				DE56EB2F17DDA17E00FE2E30 /* MainStoryboard_iPad.storyboard in Resources */,
-				DE56EB3A17DDA51100FE2E30 /* Very-Basic-Checked-checkbox-icon.png in Resources */,
-				DE56EB3B17DDA51100FE2E30 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */,
-				DEB3952517E0205A00C9B166 /* colourful-kids.jpg in Resources */,
-				DEB3952A17E029BD00C9B166 /* CartoonKids(1).gif in Resources */,
+				DEE6A8AA17F12E0A00B2A989 /* CartoonKids(1).gif in Resources */,
+				DEE6A8AB17F12E0A00B2A989 /* colourful-kids.jpg in Resources */,
+				DEE6A8AC17F12E0A00B2A989 /* Very-Basic-Checked-checkbox-icon.png in Resources */,
+				DEE6A8AD17F12E0A00B2A989 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */,
+				DEE6A8AF17F12FF900B2A989 /* Bullet-Point.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
+-(IBAction)nextButton:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *checkbox100;
 - (IBAction)checkboxAction100:(id)sender;

@@ -1976,6 +1976,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextButton:" destination="hMg-cL-Xo2" eventType="touchUpInside" id="kn9-nH-5g5"/>
                                     <segue destination="Ayb-zM-yVl" kind="push" id="PhW-ia-wbm"/>
                                 </connections>
                             </button>
@@ -2806,6 +2807,111 @@
         <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
         <image name="colourful-kids.jpg" width="3128" height="1159"/>
     </resources>
+    <classes>
+        <class className="ChooseSurvey" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ChooseSurvey.h"/>
+            <relationships>
+                <relationship kind="action" name="survey1:"/>
+                <relationship kind="action" name="survey2:"/>
+                <relationship kind="action" name="survey3:"/>
+                <relationship kind="action" name="survey4:"/>
+                <relationship kind="action" name="survey5:"/>
+                <relationship kind="action" name="survey6:"/>
+                <relationship kind="action" name="survey7:"/>
+                <relationship kind="action" name="survey8:"/>
+                <relationship kind="action" name="survey9:"/>
+                <relationship kind="outlet" name="survey1" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey3" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey4" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey5" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey6" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey7" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey8" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="survey9" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ParentInfo" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParentInfo.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scene2" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="childFollowUp1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/childFollowUp1.h"/>
+            <relationships>
+                <relationship kind="action" name="checkNextButton:"/>
+                <relationship kind="action" name="checkboxAction100:"/>
+                <relationship kind="action" name="checkboxAction110:"/>
+                <relationship kind="action" name="checkboxAction111:"/>
+                <relationship kind="outlet" name="checkbox100" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox110" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox111" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="parentFollowUp1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/parentFollowUp1.h"/>
+            <relationships>
+                <relationship kind="action" name="checkboxAction100:"/>
+                <relationship kind="action" name="checkboxAction110:"/>
+                <relationship kind="action" name="checkboxAction111:"/>
+                <relationship kind="action" name="checkboxAction200:"/>
+                <relationship kind="action" name="checkboxAction220:"/>
+                <relationship kind="action" name="checkboxAction222:"/>
+                <relationship kind="action" name="checkboxAction300:"/>
+                <relationship kind="action" name="checkboxAction330:"/>
+                <relationship kind="action" name="checkboxAction333:"/>
+                <relationship kind="action" name="checkboxAction400:"/>
+                <relationship kind="action" name="checkboxAction440:"/>
+                <relationship kind="action" name="checkboxAction444:"/>
+                <relationship kind="action" name="checkboxAction500:"/>
+                <relationship kind="action" name="checkboxAction550:"/>
+                <relationship kind="action" name="checkboxAction555:"/>
+                <relationship kind="action" name="checkboxAction600:"/>
+                <relationship kind="action" name="checkboxAction660:"/>
+                <relationship kind="action" name="checkboxAction666:"/>
+                <relationship kind="action" name="checkboxAction700:"/>
+                <relationship kind="action" name="checkboxAction770:"/>
+                <relationship kind="action" name="checkboxAction777:"/>
+                <relationship kind="action" name="checkboxAction800:"/>
+                <relationship kind="action" name="checkboxAction880:"/>
+                <relationship kind="action" name="checkboxAction888:"/>
+                <relationship kind="action" name="nextButton:"/>
+                <relationship kind="outlet" name="checkbox100" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox110" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox111" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox200" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox220" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox222" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox300" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox330" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox333" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox400" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox440" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox444" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox500" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox550" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox555" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox600" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox660" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox666" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox700" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox770" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox777" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox800" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox880" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="checkbox888" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="trialViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/trialViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

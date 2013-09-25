@@ -7,10 +7,10 @@
 //
 
 #import "parentFollowUp1.h"
+#import "trialAppDelegate.h"
 
 @interface parentFollowUp1 ()
 
-//-(void)checkNextButton;
 
 @end
 
@@ -86,6 +86,7 @@
 }
 
 - (void)checkNextButton {
+
     BOOL flag = NO;
     for(int i = 0; i < 8; i++)
     {
@@ -101,6 +102,27 @@
     //NSLog(@"%f", 2.0);
 }
 
+-(IBAction)nextButton:(id)sender {
+    ////global
+    NSInteger answers[8];
+    for(int i = 0; i < 8; i++)
+    {
+        answers[i] = checkBox[i];
+    }
+    trialAppDelegate *appDel = [[UIApplication sharedApplication]delegate];
+    appDel.survey1 = [NSMutableArray array];
+    
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[0]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[1]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[2]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[3]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[4]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[5]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[6]]];
+    [appDel.survey1 addObject:[NSNumber numberWithInt:answers[7]]];
+    NSLog(@" %@",appDel.survey1);
+}
+
 //set 1
 - (IBAction)checkboxAction100:(id)sender {
         [checkbox100 setImage:[UIImage imageNamed:@"Very-Basic-Checked-checkbox-icon.png"] forState:normal];
@@ -108,7 +130,6 @@
         [checkbox111 setImage:[UIImage imageNamed:@"Very-Basic-Unchecked-checkbox-icon.png"] forState:normal];
         checkBox[0] = 1;
         [self checkNextButton];
-        //nextButton.enabled = YES;
         
     
 }

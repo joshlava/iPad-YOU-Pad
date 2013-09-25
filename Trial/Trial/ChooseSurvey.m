@@ -54,11 +54,22 @@
 void SetGlobal(int value)
 {
     int surveyNumber = value;
+    
     NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    /*NSInteger survey1[8] = [[[NSUserDefaults standardUserDefaults]objectForKey:@"survey1"]integerValue];
+    for(int i = 0; i < 8; i++)
+    {
+        survey1[i] = 0;
+    }*/
     if(standardUserDefaults){
         [standardUserDefaults setObject:[NSNumber numberWithInt:surveyNumber] forKey:@"survey"];
+        //[standardUserDefaults setObject:survey1 forKey:@"survey1"];
         [standardUserDefaults synchronize];
     }
+    
+    
+    
+    
 }
 
 - (IBAction)survey1:(id)sender{

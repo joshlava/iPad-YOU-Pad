@@ -7,6 +7,7 @@
 //
 
 #import "trialViewController.h"
+#import "trialAppDelegate.h"
 
 @interface trialViewController ()
 
@@ -18,8 +19,9 @@
 - (void)viewDidLoad
 {
     
-   
     
+    
+    [self.navigationController setNavigationBarHidden:YES];
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view, typically from a nib.

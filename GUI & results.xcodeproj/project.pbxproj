@@ -23,7 +23,6 @@
 		8456F9E417F097AD00A64BDE /* GUI___resultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8456F9E317F097AD00A64BDE /* GUI___resultsTests.m */; };
 		84E08D4B17F0981700A16F04 /* button (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 84E08D4917F0981700A16F04 /* button (1).png */; };
 		84E08D4C17F0981700A16F04 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E08D4A17F0981700A16F04 /* button.png */; };
-		A2F0E37017F588B700906470 /* ViewControllerFirstQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F0E36E17F588B700906470 /* ViewControllerFirstQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +58,6 @@
 		8456F9E317F097AD00A64BDE /* GUI___resultsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GUI___resultsTests.m"; sourceTree = "<group>"; };
 		84E08D4917F0981700A16F04 /* button (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button (1).png"; sourceTree = "<group>"; };
 		84E08D4A17F0981700A16F04 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
-		A2F0E36D17F588B700906470 /* ViewControllerFirstQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewControllerFirstQuestion.h; path = ../ViewControllerFirstQuestion.h; sourceTree = "<group>"; };
-		A2F0E36E17F588B700906470 /* ViewControllerFirstQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewControllerFirstQuestion.m; path = ../ViewControllerFirstQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +123,6 @@
 				8456F9CA17F097AD00A64BDE /* MainStoryboard_iPad.storyboard */,
 				84E08D4917F0981700A16F04 /* button (1).png */,
 				84E08D4A17F0981700A16F04 /* button.png */,
-				A2F0E36D17F588B700906470 /* ViewControllerFirstQuestion.h */,
-				A2F0E36E17F588B700906470 /* ViewControllerFirstQuestion.m */,
 				8456F9CD17F097AD00A64BDE /* ViewController.h */,
 				8456F9CE17F097AD00A64BDE /* ViewController.m */,
 				8456F9BC17F097AD00A64BDE /* Supporting Files */,
@@ -277,7 +272,6 @@
 				8456F9C217F097AD00A64BDE /* main.m in Sources */,
 				8456F9C617F097AD00A64BDE /* AppDelegate.m in Sources */,
 				8456F9CF17F097AD00A64BDE /* ViewController.m in Sources */,
-				A2F0E37017F588B700906470 /* ViewControllerFirstQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

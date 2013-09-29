@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 BOOL runOnce = true;
+BOOL s1117ImpactSupplement = false;
 int answers[40];
 int selected[40];
 NSFileManager *fm;
@@ -64,6 +65,12 @@ NSString *filePath;
             [temp setSelected:YES];
         }
     }
+    
+    if(s1117ImpactSupplement){
+        UIButton *temp = (UIButton *)[self.view viewWithTag:999];
+        [temp setTitle:@"Next" forState:UIControlStateNormal];
+    }
+    
     [firstQuestionNavBar setHidesBackButton:YES];
     [endOfSurvey setHidesBackButton:YES];
     [super viewDidLoad];
@@ -87,9 +94,37 @@ NSString *filePath;
         NSLog(@"Certaintly True!");
         answers[button.tag / 100] = 2;
         selected[button.tag / 100] = button.tag;
-    } else if([buttonTitle isEqualToString:@"I don't know"]){
-        NSLog(@"I DON'T KNOW!");
-        answers[button.tag / 100] = 3;
+    }  else if([buttonTitle isEqualToString:@"No - No difficulties"]){
+        NSLog(@"No - No difficulties!");
+        answers[button.tag / 100] = 10;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Yes - Minor difficulties"]){
+        NSLog(@"Yes - Minor difficulties!");
+        answers[button.tag / 100] = 11;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Yes - Definite difficulties"]){
+        NSLog(@"Yes - Definite difficulties");
+        answers[button.tag / 100] = 12;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Yes - Severe difficulties"]){
+        NSLog(@"Yes - Severe difficulties!");
+        answers[button.tag / 100] = 13;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Less than a month"]){
+        NSLog(@"Less than a month!");
+        answers[button.tag / 100] = 14;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"1-5 months"]){
+        NSLog(@"1-5 months!");
+        answers[button.tag / 100] = 15;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"6-12 months"]){
+        NSLog(@"6-12 months!");
+        answers[button.tag / 100] = 16;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Over a year"]){
+        NSLog(@"Over a year!");
+        answers[button.tag / 100] = 17;
         selected[button.tag / 100] = button.tag;
     }
 }
@@ -122,6 +157,36 @@ NSString *filePath;
         
         //display file contents on screen
         [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
+    }
+}
+
+//Handler to continue with impact supplement questions if yes is answered to question re: difficulties
+- (IBAction)childDifficultiesNext:(id)sender {
+    UIButton *yesMinor = (UIButton *)[self.view viewWithTag:2402];
+    UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:2403];
+    UIButton *yesSevere = (UIButton *)[self.view viewWithTag:2404];
+    UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:2401];
+
+    if([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES){
+        [self performSegueWithIdentifier:@"yesDifficulties" sender:self];
+    } else if([noDifficulties isSelected]==YES){
+        [self performSegueWithIdentifier:@"noDifficulties" sender:self];
+    }
+}
+
+//Handler to make sure the impact supp module is loaded when impact supp survey selected
+- (IBAction)s1117ImpactSuppButtonPress:(id)sender {
+    s1117ImpactSupplement = true;
+}
+
+//handler to make impact supp questions visible
+- (IBAction)impactSuppNext:(id)sender {
+    
+    if(s1117ImpactSupplement){
+        [self performSegueWithIdentifier:@"yesImpactSupp" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"noImpactSupp" sender:self];
+
     }
 }
 

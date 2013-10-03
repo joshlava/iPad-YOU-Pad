@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09BFD96117FD808400CAE2EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BFD96017FD808400CAE2EF /* Default-568h@2x.png */; };
 		A26E6A7A17FC4D04006C9456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7917FC4D04006C9456 /* Foundation.framework */; };
 		A26E6A7C17FC4D04006C9456 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7B17FC4D04006C9456 /* CoreGraphics.framework */; };
 		A26E6A7E17FC4D04006C9456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7D17FC4D04006C9456 /* UIKit.framework */; };
@@ -37,7 +38,7 @@
 		DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */; };
 		DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */; };
 		DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */; };
-		DE1BAFD517FD5D3900802872 /* Parents41ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */; };
+		DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* TeachersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09BFD96017FD808400CAE2EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A26E6A7617FC4D04006C9456 /* iPad-YOU-Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPad-YOU-Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E6A7917FC4D04006C9456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A26E6A7B17FC4D04006C9456 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,8 +94,8 @@
 		DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parentMenuViewController.h; sourceTree = "<group>"; };
 		DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parentMenuViewController.m; sourceTree = "<group>"; };
 		DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = SOURCE_ROOT; };
-		DE1BAFD317FD5D3800802872 /* Parents41ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parents41ViewController.h; sourceTree = "<group>"; };
-		DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parents41ViewController.m; sourceTree = "<group>"; };
+		DE1BAFD317FD5D3800802872 /* TeachersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersViewController.h; sourceTree = "<group>"; };
+		DE1BAFD417FD5D3800802872 /* TeachersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		A26E6A6D17FC4D04006C9456 = {
 			isa = PBXGroup;
 			children = (
+				09BFD96017FD808400CAE2EF /* Default-568h@2x.png */,
 				A26E6A7F17FC4D04006C9456 /* iPad-YOU-Pad */,
 				A26E6A9E17FC4D04006C9456 /* iPad-YOU-PadTests */,
 				A26E6A7817FC4D04006C9456 /* Frameworks */,
@@ -160,7 +163,7 @@
 				A2E0DC5117FD1601004E7327 /* MainMenu */,
 				A2E0DC5017FD15F0004E7327 /* EducatorsSurveys */,
 				A2E0DC4E17FD15D0004E7327 /* CompletedSurveys */,
-				A2E0DC4C17FD15A4004E7327 /* ParentsSurveys */,
+				A2E0DC4C17FD15A4004E7327 /* TeachersSurvey */,
 				A26E6AAE17FC4D15006C9456 /* KidsSurveys */,
 				A26E6A8017FC4D04006C9456 /* Supporting Files */,
 			);
@@ -219,7 +222,7 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		A2E0DC4C17FD15A4004E7327 /* ParentsSurveys */ = {
+		A2E0DC4C17FD15A4004E7327 /* TeachersSurvey */ = {
 			isa = PBXGroup;
 			children = (
 				A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */,
@@ -227,10 +230,10 @@
 				A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */,
 				DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */,
 				DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */,
-				DE1BAFD317FD5D3800802872 /* Parents41ViewController.h */,
-				DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */,
+				DE1BAFD317FD5D3800802872 /* TeachersViewController.h */,
+				DE1BAFD417FD5D3800802872 /* TeachersViewController.m */,
 			);
-			name = ParentsSurveys;
+			name = TeachersSurvey;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -359,6 +362,7 @@
 				DE1BAFCC17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png in Resources */,
 				DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */,
 				DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */,
+				09BFD96117FD808400CAE2EF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +390,7 @@
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,
 				A26E6A8617FC4D04006C9456 /* main.m in Sources */,
 				DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */,
-				DE1BAFD517FD5D3900802872 /* Parents41ViewController.m in Sources */,
+				DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

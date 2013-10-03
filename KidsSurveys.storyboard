@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="eol-vR-tLy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" initialViewController="k1n-AG-N5p">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmN-Hx-cN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="881"/>
+            <point key="canvasLocation" x="3687" y="-319"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="Aax-7a-WfD">
@@ -402,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEB-mk-5Ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="881"/>
+            <point key="canvasLocation" x="4577" y="-319"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="bdj-rj-Zky">
@@ -481,7 +481,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUA-Sq-LBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="880"/>
+            <point key="canvasLocation" x="5438" y="-320"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="peb-dt-VpS">
@@ -560,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xi2-Ru-p9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798" y="896"/>
+            <point key="canvasLocation" x="6350" y="-304"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="onX-w6-Zbw">
@@ -639,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8B-D2-xBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="2084"/>
+            <point key="canvasLocation" x="7210" y="-296"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="wuW-g7-aAz">
@@ -718,7 +718,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R2p-zS-Coa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="2116"/>
+            <point key="canvasLocation" x="9020" y="-264"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="hmX-2b-NuR">
@@ -797,7 +797,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajy-Bh-I3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="2088"/>
+            <point key="canvasLocation" x="8938" y="-292"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="S5w-Ty-WXk">
@@ -876,7 +876,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOx-kH-Bau" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2808" y="2088"/>
+            <point key="canvasLocation" x="9816" y="-292"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="Ccw-oD-YKh">
@@ -955,7 +955,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6d-Jn-V8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202" y="3352"/>
+            <point key="canvasLocation" x="10714" y="-296"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="2eN-F7-ZyK">
@@ -1034,7 +1034,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67O-sQ-ZcF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="3392"/>
+            <point key="canvasLocation" x="12760" y="-256"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="7mF-js-as9">
@@ -1113,7 +1113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqe-WD-KNg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="3408"/>
+            <point key="canvasLocation" x="13656" y="-240"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="1oj-v5-qh9">
@@ -1192,7 +1192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFx-MI-ynM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="3476"/>
+            <point key="canvasLocation" x="14484" y="-172"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="5pW-Bp-NGc">
@@ -1271,7 +1271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oS-Kb-bfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="4532"/>
+            <point key="canvasLocation" x="15324" y="-172"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="Hsq-vT-l4p">
@@ -1350,7 +1350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4I5-ka-jpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="4584"/>
+            <point key="canvasLocation" x="16264" y="-120"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="QFb-q4-6bU">
@@ -1429,7 +1429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kvv-jE-cNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2072" y="4616"/>
+            <point key="canvasLocation" x="17206" y="-88"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="o9R-Of-Wh5">
@@ -1508,7 +1508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCY-xl-w9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2990" y="4632"/>
+            <point key="canvasLocation" x="18124" y="-72"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="SwB-W1-ov2">
@@ -1587,7 +1587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAh-co-idf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="5836"/>
+            <point key="canvasLocation" x="18984" y="-48"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="CQ6-yb-Yu6">
@@ -1666,7 +1666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDZ-Wv-mDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="5780"/>
+            <point key="canvasLocation" x="19812" y="-104"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="tl8-9S-zQt">
@@ -1745,7 +1745,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KP5-lK-mLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="5792"/>
+            <point key="canvasLocation" x="20680" y="-92"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="AEJ-k1-TqU">
@@ -1824,7 +1824,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlQ-8Z-nls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2846" y="5844"/>
+            <point key="canvasLocation" x="21596" y="-40"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="VGY-K4-QJe">
@@ -1903,7 +1903,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bet-RO-lGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182" y="7036"/>
+            <point key="canvasLocation" x="22484" y="-12"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="weA-Qv-l2C">
@@ -1981,14 +1981,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="qyy-mg-SKl"/>
                     <connections>
-                        <segue destination="3Rc-R0-mEO" kind="push" identifier="noImpactSupp" id="i3S-8d-f3j"/>
+                        <segue destination="3Rc-R0-mEO" kind="push" identifier="noImpactSuppOrFollowUp" id="i3S-8d-f3j"/>
                         <segue destination="AsD-eU-e4G" kind="push" identifier="yesImpactSupp" id="rfY-20-snH"/>
                         <segue destination="B6l-2X-pg0" kind="push" identifier="yesFollowUp" id="kZI-sQ-YaP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ao5-JZ-PUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="7052"/>
+            <point key="canvasLocation" x="23394" y="4"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="hEk-Yr-34O">
@@ -1998,7 +1998,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QdC-C8-3UB">
+                            <button opaque="NO" tag="95" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QdC-C8-3UB">
                                 <rect key="frame" x="187" y="160" width="351" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2010,10 +2010,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="createFile:" destination="JYR-rK-wMi" eventType="touchUpInside" id="8uf-4U-8zm"/>
                                     <segue destination="2" kind="push" id="koi-5H-kqI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="utV-Vc-y7v">
+                            <button opaque="NO" tag="96" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="utV-Vc-y7v">
                                 <rect key="frame" x="87" y="250" width="551" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2025,11 +2026,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="createFile:" destination="JYR-rK-wMi" eventType="touchUpInside" id="uGe-hH-Ghi"/>
                                     <action selector="s1117ImpactSuppButtonPress:" destination="JYR-rK-wMi" eventType="touchUpInside" id="Jij-vH-3di"/>
                                     <segue destination="2" kind="push" id="bdX-yB-LMF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jSR-cP-M1f">
+                            <button opaque="NO" tag="98" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jSR-cP-M1f">
                                 <rect key="frame" x="265" y="341" width="167" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2041,11 +2043,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="createFile:" destination="JYR-rK-wMi" eventType="touchUpInside" id="XL5-mR-tIt"/>
                                     <action selector="s1117FollowUpButtonPress:" destination="JYR-rK-wMi" eventType="touchUpInside" id="TUQ-OH-NsS"/>
                                     <segue destination="2" kind="push" id="wV7-ip-A2y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R4r-J0-OrP">
+                            <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R4r-J0-OrP">
                                 <rect key="frame" x="327" y="444" width="70" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2056,6 +2059,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createFile:" destination="JYR-rK-wMi" eventType="touchUpInside" id="P1j-F5-rJ6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xd3-Tw-NmN">
                                 <rect key="frame" x="282" y="559" width="161" height="44"/>
@@ -2079,25 +2085,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvR-Gh-WhT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="-296"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="r7K-XM-fPH">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eol-vR-tLy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iQE-OS-ftA">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JYR-rK-wMi" kind="relationship" relationship="rootViewController" id="jVQ-aX-MXq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qBm-Rp-2Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-802" y="-312"/>
+            <point key="canvasLocation" x="154" y="-319"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="RAI-Od-Q6R">
@@ -2142,7 +2130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzE-gp-YVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4296" y="7260"/>
+            <point key="canvasLocation" x="30598" y="35"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="udE-h7-ONc">
@@ -2228,14 +2216,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="MlG-dG-taZ"/>
                     <connections>
-                        <outlet property="followUpDifficultiesLabel" destination="6hB-3h-Fko" id="C4X-2B-GnI"/>
                         <segue destination="Ybs-B3-HHA" kind="push" identifier="yesDifficulties" id="UXK-gB-8mH"/>
                         <segue destination="xzA-oE-O4P" kind="push" identifier="noDifficulties" id="1bB-rf-Y3H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FKG-cA-gaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112" y="8176"/>
+            <point key="canvasLocation" x="24302" y="1240"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="nLn-to-YKp">
@@ -2322,7 +2309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHD-VJ-cNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5298" y="8136"/>
+            <point key="canvasLocation" x="25184" y="1248"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="caf-Ow-FC0">
@@ -2366,7 +2353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ef6-oE-ydJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4136" y="8829"/>
+            <point key="canvasLocation" x="29590" y="4"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="kez-sc-edv">
@@ -2453,7 +2440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHm-k6-mk6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6110" y="8136"/>
+            <point key="canvasLocation" x="25996" y="1248"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="Oth-yR-TO5">
@@ -2712,7 +2699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaV-10-it6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6950" y="8136"/>
+            <point key="canvasLocation" x="26836" y="1248"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="WOK-WB-GFI">
@@ -2799,7 +2786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPc-oK-TX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7784" y="8136"/>
+            <point key="canvasLocation" x="27670" y="1248"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="WN4-Xe-FJz">
@@ -2886,7 +2873,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EyA-4o-urG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568" y="10200"/>
+            <point key="canvasLocation" x="24168" y="2464"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="jnK-sk-DUP">
@@ -2896,7 +2883,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uLF-fP-vhm">
+                            <button opaque="NO" tag="998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uLF-fP-vhm">
                                 <rect key="frame" x="595" y="854" width="102" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2985,7 +2972,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPy-Ku-Fg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="10200"/>
+            <point key="canvasLocation" x="23318" y="2464"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="X4Q-Nd-geL">
@@ -3051,7 +3038,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="childDifficultiesNext:" destination="PBH-OJ-KA9" eventType="touchUpInside" id="PEm-He-H9w"/>
+                                    <action selector="childDifficultiesNextFollowUp:" destination="PBH-OJ-KA9" eventType="touchUpInside" id="29A-ii-63a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3504" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VBc-3t-e9V">
@@ -3071,19 +3058,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="0sb-0S-jC0"/>
                     <connections>
-                        <outlet property="followUpDifficultiesLabel" destination="vj4-ze-cKx" id="EMO-z3-Cbp"/>
+                        <segue destination="USS-QE-kr0" kind="push" identifier="yesDifficultiesFollowUp" id="g0t-Ao-IxO"/>
+                        <segue destination="xzA-oE-O4P" kind="push" identifier="noDifficultiesFollowUp" id="h0z-Q5-r5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRd-BS-Uaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3464" y="10200"/>
+            <point key="canvasLocation" x="25064" y="2464"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="tqL-bq-tJg">
             <objects>
                 <viewController id="USS-QE-kr0" customClass="KidsSurveysViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="buV-Rl-8hh">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do these difficulties upset or distress you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ADT-iV-mqG">
@@ -3163,14 +3151,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHM-Ks-ILE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4390" y="10200"/>
+            <point key="canvasLocation" x="25990" y="2464"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="ywM-cC-pGs">
             <objects>
                 <viewController id="oKK-VX-gQd" customClass="KidsSurveysViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OVs-2T-VU0">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do the difficulties interfere with your everyday life in the following areas?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hwr-yS-74h">
@@ -3422,14 +3410,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QU1-Tb-Gzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5278" y="10200"/>
+            <point key="canvasLocation" x="26878" y="2464"/>
         </scene>
         <!--Kids Surveys View Controller-->
         <scene sceneID="v7f-Hj-BqH">
             <objects>
                 <viewController id="Bxm-CD-1wk" customClass="KidsSurveysViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pOX-TM-6xe">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do the difficulties make it harder for those around you (family, friends, teachers, etc.)?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SaC-6L-4Qk">
@@ -3490,7 +3478,7 @@
                                     <segue destination="xzA-oE-O4P" kind="push" id="TiH-JD-ZCw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V8u-7l-VZl">
+                            <button opaque="NO" tag="4104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V8u-7l-VZl">
                                 <rect key="frame" x="577" y="377" width="119" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3509,10 +3497,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2q-xM-trJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6208" y="10200"/>
+            <point key="canvasLocation" x="27808" y="2464"/>
+        </scene>
+        <!--Kids Surveys View Controller-->
+        <scene sceneID="WFl-G4-yhG">
+            <objects>
+                <viewController id="BAb-F7-kx6" customClass="KidsSurveysViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Du6-R3-q9g">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Researcher Name: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O9N-HB-0LX">
+                                <rect key="frame" x="138" y="256" width="147" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child's Name: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yV7-BC-LNZ">
+                                <rect key="frame" x="138" y="297" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child's Unique ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kTq-im-QVh">
+                                <rect key="frame" x="138" y="339" width="139" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="fqr-Dg-io0">
+                                <rect key="frame" x="293" y="247" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="CgP-FI-JIm">
+                                <rect key="frame" x="293" y="288" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="jZJ-Ed-O1T">
+                                <rect key="frame" x="293" y="330" width="303" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" tag="998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SH5-n2-iqw">
+                                <rect key="frame" x="619" y="856" width="102" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next" backgroundImage="button (1).png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveInfo:" destination="BAb-F7-kx6" eventType="touchUpInside" id="tGU-t0-fdN"/>
+                                    <segue destination="JYR-rK-wMi" kind="push" id="IiP-CO-uT5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fLh-Tt-YgN"/>
+                    <connections>
+                        <outlet property="firstQuestionNavBar" destination="fLh-Tt-YgN" id="8vv-bQ-33s"/>
+                        <outlet property="kidsID" destination="jZJ-Ed-O1T" id="JTM-cD-c3t"/>
+                        <outlet property="kidsName" destination="CgP-FI-JIm" id="Vs8-v1-ZZe"/>
+                        <outlet property="researcherName" destination="fqr-Dg-io0" id="WNg-Xp-QoG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dB3-fu-Chd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="-320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mLz-ik-9QH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k1n-AG-N5p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPo-uE-351">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BAb-F7-kx6" kind="relationship" relationship="rootViewController" id="ad6-Tq-8O7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GE-mt-2yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618" y="-319"/>
         </scene>
     </scenes>
     <resources>
+        <image name="button (1).png" width="95" height="50"/>
         <image name="button (1).png" width="95" height="50"/>
         <image name="button (1).png" width="95" height="50"/>
         <image name="button (1).png" width="95" height="50"/>
@@ -3702,7 +3785,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bdX-yB-LMF"/>
+        <segue reference="koi-5H-kqI"/>
         <segue reference="rTG-i4-WIZ"/>
         <segue reference="tYi-vt-Tou"/>
     </inferredMetricsTieBreakers>

@@ -11,19 +11,23 @@
 extern BOOL runOnce;
 extern BOOL s1117ImpactSupplement;
 extern BOOL s1117FollowUp;
-extern int answers[40];
-extern int selected[40];
+extern int answers[50];
+extern int selected[50];
 extern NSFileManager *fm;
 extern NSArray *paths;
 extern NSString *docDir;
 extern NSString *filePath;
+extern NSString *kidsID;
+extern NSString *kidsName;
+extern NSString *researcherName;
 
 @interface KidsSurveysViewController : UIViewController
 {
-    IBOutlet UITextView *textView;    
     __weak IBOutlet UINavigationItem *firstQuestionNavBar;
     __weak IBOutlet UINavigationItem *endOfSurvey;
-    __weak IBOutlet UILabel *followUpDifficultiesLabel;
+    IBOutlet UITextField *kidsID;
+    IBOutlet UITextField *kidsName;
+    IBOutlet UITextField *researcherName;
 }
 
 - (IBAction)answer:(id)sender;
@@ -32,8 +36,9 @@ extern NSString *filePath;
 - (IBAction)s1117ImpactSuppButtonPress:(id)sender;
 - (IBAction)forkNext:(id)sender;
 - (IBAction)s1117FollowUpButtonPress:(id)sender;
-- (IBAction)followUpNext:(id)sender;
 - (IBAction)goToMainMenu;
+- (IBAction)createFile:(id)sender;
+- (IBAction)saveInfo:(id)sender;
 
 
 @end

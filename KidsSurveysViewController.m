@@ -11,12 +11,15 @@
 BOOL runOnce = true;
 BOOL s1117ImpactSupplement = false;
 BOOL s1117FollowUp = false;
-int answers[40];
-int selected[40];
+int answers[50];
+int selected[50];
 NSFileManager *fm;
 NSArray *paths;
 NSString *docDir;
 NSString *filePath;
+NSString *kidsIDString;
+NSString *kidsNameString;
+NSString *researcherNameString;
 
 @implementation KidsSurveysViewController
 
@@ -28,25 +31,33 @@ NSString *filePath;
 
 #pragma mark - View lifecycle
 
+// code that runs on every new view that is loaded
 - (void)viewDidLoad
 {
+    //make the next button unclickable until an answer is selected
+    UIButton * next = (UIButton *)[self.view viewWithTag:998];
+    next.enabled = NO;
+    
+    //run this section of code only once, when a survey is first started
     if(runOnce){
-        //initialize answers array
-        for(int i = 0; i < 40; i++){
+        //initialize answers and selected array
+        for(int i = 0; i < 50; i++){
             answers[i] = -1;
             selected[i] = -1;
         }
         
-        fm = [NSFileManager defaultManager];
-        [textView setText:@"Press the Button!"];
+        next.enabled = YES;
+        
+        /*fm = [NSFileManager defaultManager];
         
         //create the filepath
         paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         docDir = [paths objectAtIndex:0];
         filePath = [docDir stringByAppendingPathComponent:@"answers.txt"];
+        
         //create the answer file
         [fm createFileAtPath:filePath contents:nil attributes:nil];
-        NSLog(@"file created at: %@",docDir);
+        NSLog(@"file created at: %@",docDir);*/
         
         runOnce = false;
     }
@@ -60,10 +71,10 @@ NSString *filePath;
         }
     }
     
-    UIButton * next = (UIButton *)[self.view viewWithTag:998];
-    next.enabled = NO;
+
     
-    for(int i = 0; i < 40; i++){
+    //recover state of previously selected answers when a user goes back to a previous question, then forward again to already answered questions
+    for(int i = 0; i < 50; i++){
         if(selected[i] != -1){
             UIButton *temp = (UIButton *)[self.view viewWithTag:selected[i]];
             [temp setSelected:YES];
@@ -72,17 +83,20 @@ NSString *filePath;
         }
     }
     
+    //when the impact supplement or follow up survey is chosen, change the title of the submit button for the last common question page to a next button
     if(s1117ImpactSupplement || s1117FollowUp){
         UIButton *temp = (UIButton *)[self.view viewWithTag:998];
         [temp setTitle:@"Next" forState:UIControlStateNormal];
     }
     
-    if(s1117FollowUp){
-        followUpDifficultiesLabel.text = @"Over the last month, do you think you have difficulties in one or more of the following areas: emotions, concentration, behaviour or being able to get on with other people?";
-    }
-    
+    //hide the back button when the survey has first commenced and after the survey has been submitted for encapsulation purposes
     [firstQuestionNavBar setHidesBackButton:YES];
     [endOfSurvey setHidesBackButton:YES];
+    
+    //set the background
+    UIColor * circleColorPattern = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bg.jpg"]];
+    [self.view setBackgroundColor:circleColorPattern];
+    
     [super viewDidLoad];
 }
 
@@ -194,9 +208,8 @@ NSString *filePath;
             //concatenate answers into one single string, answerString
             NSMutableString *answerString = [NSMutableString string];
             int i = 0;
-            while(answers[i] < 40){
+            while(answers[i] < 50){
                 if(answers[i] != -1){
-                    NSLog([NSString stringWithFormat:@"answers[%d]: %d\n", i, answers[i]]);
                     [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
                 }
                 i++;
@@ -208,13 +221,6 @@ NSString *filePath;
             [myHandle writeData:theData];
             [myHandle closeFile];
             
-            //display file contents on screen
-            [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
-        }
-        
-        for(int j = 0; j < 40; j++){
-            answers[j] = -1;
-            selected[j] = -1;
         }
     }
 }
@@ -225,10 +231,10 @@ NSString *filePath;
     UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:2503];
     UIButton *yesSevere = (UIButton *)[self.view viewWithTag:2504];
     UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:2501];
-
-    if(([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES) && s1117FollowUp){
+    
+    if(([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES)){
         [self performSegueWithIdentifier:@"noDurationDifficulties" sender:self];
-    } else if (([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES) && !s1117FollowUp){
+    } else if (([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES)){
         [self performSegueWithIdentifier:@"yesDifficulties" sender:self];
     } else if([noDifficulties isSelected]==YES){
         [self performSegueWithIdentifier:@"noDifficulties" sender:self];
@@ -240,7 +246,7 @@ NSString *filePath;
     s1117ImpactSupplement = true;
 }
 
-//handler to make impact supp questions visible
+//handler to make additional impact supplement or follow up survey questions visible
 - (IBAction)forkNext:(id)sender {
     
     if(s1117ImpactSupplement){
@@ -249,42 +255,86 @@ NSString *filePath;
         [self performSegueWithIdentifier:@"yesFollowUp" sender:self];
     }
     else {
-        [self performSegueWithIdentifier:@"noImpactSupp" sender:self];
+        [self performSegueWithIdentifier:@"noImpactSuppOrFollowUp" sender:self];
     }
 }
 
+//handler to make sure the follow up module is loaded when follow up survey selected
 - (IBAction)s1117FollowUpButtonPress:(id)sender{
     s1117FollowUp = true;
 }
 
-- (IBAction)followUpNext:(id)sender{
-    if(s1117FollowUp){
-        [self performSegueWithIdentifier:@"yesFollowUp" sender:self];
+//Handler to continue with additional follow up survey questions if yes is answered to question re: difficulties
+- (IBAction)childDifficultiesNextFollowUp:(id)sender {
+    UIButton *yesMinor = (UIButton *)[self.view viewWithTag:3502];
+    UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:3503];
+    UIButton *yesSevere = (UIButton *)[self.view viewWithTag:3504];
+    UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:3501];
+    
+    if(([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES)){
+        [self performSegueWithIdentifier:@"yesDifficultiesFollowUp" sender:self];
+    } else if([noDifficulties isSelected]==YES){
+        [self performSegueWithIdentifier:@"noDifficultiesFollowUp" sender:self];
     }
 }
 
 //event handler for when answer button is pressed only highlights the latest selected answer button.
 - (void)buttonClicked:(UIButton *)sender {
+    
+    //enable the next button since an answer has been selected
     UIButton * next = (UIButton *)[self.view viewWithTag:998];
     next.enabled = YES;
     
     UIButton *button = (UIButton *)sender;
     
+    //logic to allow for mutually exclusive answer buttons within a question
     if([button isSelected]==YES) {
         [button setSelected:YES];
     } else {
         int round = ((button.tag / 100) * 100) + 1;
-        for(int i = round; i < (round + 5); i++){
+        for(int i = round; i < (round + 6); i++){
             UIButton * temp = (UIButton *)[self.view viewWithTag:i];
             [temp setSelected:NO];
         }
         [button setSelected:YES];
     }
+    
+    //call the answer action at the same time as an answer is selected
     [self answer:sender];
 }
 
+//handler to bring view back to the main menu
 - (void)goToMainMenu{
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)createFile:(id)sender {
+    
+    UIButton *button = (UIButton *)sender;
+    NSString *buttonTitle = button.currentTitle;
+    
+    /*//initialize answers and selected array
+    for(int i = 0; i < 50; i++){
+        answers[i] = -1;
+        selected[i] = -1;
+    }*/
+    
+    fm = [NSFileManager defaultManager];
+    
+    //create the filepath
+    paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    docDir = [paths objectAtIndex:0];
+    filePath = [docDir stringByAppendingPathComponent: [NSString stringWithFormat:@"%@-%@-%@", buttonTitle, researcherNameString, kidsIDString]];
+    
+    //create the answer file
+    [fm createFileAtPath:filePath contents:nil attributes:nil];
+    NSLog(@"file created at: %@",docDir);
+}
+
+- (IBAction)saveInfo:(id)sender {
+    researcherNameString = researcherName.text;
+    kidsIDString = kidsID.text;
+    kidsNameString = kidsName.text;
 }
 
 - (void)viewDidUnload

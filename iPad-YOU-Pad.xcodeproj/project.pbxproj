@@ -30,7 +30,7 @@
 		A289646417FD257B0071FC46 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289646317FD257B0071FC46 /* SettingsViewController.m */; };
 		A2E0DC5317FD166B004E7327 /* EducatorsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */; };
 		A2E0DC5517FD167C004E7327 /* CompletedSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */; };
-		A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */; };
+		A2E0DC5717FD168B004E7327 /* TeachersSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */; };
 		A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */; };
 		A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */; };
 		A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */; };
@@ -82,7 +82,7 @@
 		A289646317FD257B0071FC46 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EducatorsSurveys.storyboard; sourceTree = "<group>"; };
 		A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompletedSurveys.storyboard; sourceTree = "<group>"; };
-		A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentsSurveys.storyboard; sourceTree = "<group>"; };
+		A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TeachersSurveys.storyboard; sourceTree = "<group>"; };
 		A2E0DC5817FD17DD004E7327 /* EducatorSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducatorSurveysViewController.h; sourceTree = "<group>"; };
 		A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducatorSurveysViewController.m; sourceTree = "<group>"; };
 		A2E0DC5B17FD17FC004E7327 /* CompletedSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedSurveysViewController.h; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		A2E0DC4C17FD15A4004E7327 /* TeachersSurvey */ = {
 			isa = PBXGroup;
 			children = (
-				A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */,
+				A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */,
 				A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */,
 				A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */,
 				DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */,
@@ -355,7 +355,7 @@
 				A2E0DC5317FD166B004E7327 /* EducatorsSurveys.storyboard in Resources */,
 				A26E6AB417FC4D2C006C9456 /* button.png in Resources */,
 				A26E6A8417FC4D04006C9456 /* InfoPlist.strings in Resources */,
-				A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */,
+				A2E0DC5717FD168B004E7327 /* TeachersSurveys.storyboard in Resources */,
 				A26E6A8D17FC4D04006C9456 /* MainMenu.storyboard in Resources */,
 				A26E6AB317FC4D2C006C9456 /* button (1).png in Resources */,
 				A289646117FD253C0071FC46 /* Settings.storyboard in Resources */,

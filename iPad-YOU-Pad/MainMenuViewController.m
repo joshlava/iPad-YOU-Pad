@@ -31,7 +31,7 @@ int pin = 1968;
 }
 
 -(void)goToKidsSurveys{
-    UIStoryboard *kidsStoryboard = [UIStoryboard storyboardWithName:@"KidsSurveys" bundle:nil];
+    UIStoryboard *kidsStoryboard = [UIStoryboard storyboardWithName:@"TeachersSurveys" bundle:nil];
     UIViewController *initialKidsVC = [kidsStoryboard instantiateInitialViewController];
     initialKidsVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:initialKidsVC animated:YES];

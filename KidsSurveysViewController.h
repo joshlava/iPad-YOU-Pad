@@ -23,13 +23,14 @@ extern NSString *filePath;
     IBOutlet UITextView *textView;    
     __weak IBOutlet UINavigationItem *firstQuestionNavBar;
     __weak IBOutlet UINavigationItem *endOfSurvey;
+    __weak IBOutlet UILabel *followUpDifficultiesLabel;
 }
 
 - (IBAction)answer:(id)sender;
 - (IBAction)submit:(id)sender;
 - (IBAction)childDifficultiesNext:(id)sender;
 - (IBAction)s1117ImpactSuppButtonPress:(id)sender;
-- (IBAction)impactSuppNext:(id)sender;
+- (IBAction)forkNext:(id)sender;
 - (IBAction)s1117FollowUpButtonPress:(id)sender;
 - (IBAction)followUpNext:(id)sender;
 - (IBAction)goToMainMenu;

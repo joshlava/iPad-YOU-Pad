@@ -53,23 +53,32 @@ NSString *filePath;
     
     //for every possible answer button, set the background to be changed to green when state is changed to selected
     for(int i = 0; i < 10000; i+=100){
-        for(int j = 1; j < 5; j++){
+        for(int j = 1; j < 6; j++){
             UIButton * temp = (UIButton *)[self.view viewWithTag:(i+j)];
             [temp setBackgroundImage:[UIImage imageNamed:@"button (1).png"] forState:UIControlStateSelected];
             [temp addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         }
     }
     
+    UIButton * next = (UIButton *)[self.view viewWithTag:998];
+    next.enabled = NO;
+    
     for(int i = 0; i < 40; i++){
         if(selected[i] != -1){
             UIButton *temp = (UIButton *)[self.view viewWithTag:selected[i]];
             [temp setSelected:YES];
+            if([temp isSelected]==YES)
+                next.enabled = YES;
         }
     }
     
-    if(s1117ImpactSupplement){
-        UIButton *temp = (UIButton *)[self.view viewWithTag:999];
+    if(s1117ImpactSupplement || s1117FollowUp){
+        UIButton *temp = (UIButton *)[self.view viewWithTag:998];
         [temp setTitle:@"Next" forState:UIControlStateNormal];
+    }
+    
+    if(s1117FollowUp){
+        followUpDifficultiesLabel.text = @"Over the last month, do you think you have difficulties in one or more of the following areas: emotions, concentration, behaviour or being able to get on with other people?";
     }
     
     [firstQuestionNavBar setHidesBackButton:YES];
@@ -143,37 +152,70 @@ NSString *filePath;
         NSLog(@"A great deal!");
         answers[button.tag / 100] = 23;
         selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"Much worse"]){
+        NSLog(@"Much worse");
+        answers[button.tag / 100] = 30;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"A bit worse"]){
+        NSLog(@"A bit worse!");
+        answers[button.tag / 100] = 31;
+        selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"About the same"]){
+        NSLog(@"About the same!");
+        answers[button.tag / 100] = 32;
+        selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"A bit better"]){
+        NSLog(@"A bit better!");
+        answers[button.tag / 100] = 33;
+        selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"Much better"]){
+        NSLog(@"Much better!");
+        answers[button.tag / 100] = 34;
+        selected[button.tag / 100] = button.tag;
     }
 }
 
 //event handler for when submit button is selected to write results to file.
 -(IBAction)submit:(id)sender
 {
-    if ([fm fileExistsAtPath:filePath]) {
-        //create file handle
-        NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
-        
-        if(myHandle == nil){
-            exit(0);
-            //failed to open file
+    UIButton *button = (UIButton *)sender;
+    NSString *buttonTitle = button.currentTitle;
+    
+    if([buttonTitle isEqualToString:@"Submit"]){
+        if ([fm fileExistsAtPath:filePath]) {
+            //create file handle
+            NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+            
+            if(myHandle == nil){
+                exit(0);
+                //failed to open file
+            }
+            
+            //concatenate answers into one single string, answerString
+            NSMutableString *answerString = [NSMutableString string];
+            int i = 0;
+            while(answers[i] < 40){
+                if(answers[i] != -1){
+                    NSLog([NSString stringWithFormat:@"answers[%d]: %d\n", i, answers[i]]);
+                    [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
+                }
+                i++;
+            }
+            
+            //write the answers to file
+            NSData *theData = [answerString dataUsingEncoding:NSUTF8StringEncoding];
+            [myHandle seekToEndOfFile];
+            [myHandle writeData:theData];
+            [myHandle closeFile];
+            
+            //display file contents on screen
+            [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
         }
         
-        //concatenate answers into one single string, answerString
-        NSMutableString *answerString = [NSMutableString string];
-        int i = 0;
-        while(answers[i] != -1){
-            [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
-            i++;
+        for(int j = 0; j < 40; j++){
+            answers[j] = -1;
+            selected[j] = -1;
         }
-        
-        //write the answers to file
-        NSData *theData = [answerString dataUsingEncoding:NSUTF8StringEncoding];
-        [myHandle seekToEndOfFile];
-        [myHandle writeData:theData];
-        [myHandle closeFile];
-        
-        //display file contents on screen
-        [textView setText:[NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil]];
     }
 }
 
@@ -184,7 +226,9 @@ NSString *filePath;
     UIButton *yesSevere = (UIButton *)[self.view viewWithTag:2504];
     UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:2501];
 
-    if([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES){
+    if(([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES) && s1117FollowUp){
+        [self performSegueWithIdentifier:@"noDurationDifficulties" sender:self];
+    } else if (([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES) && !s1117FollowUp){
         [self performSegueWithIdentifier:@"yesDifficulties" sender:self];
     } else if([noDifficulties isSelected]==YES){
         [self performSegueWithIdentifier:@"noDifficulties" sender:self];
@@ -197,13 +241,15 @@ NSString *filePath;
 }
 
 //handler to make impact supp questions visible
-- (IBAction)impactSuppNext:(id)sender {
+- (IBAction)forkNext:(id)sender {
     
     if(s1117ImpactSupplement){
         [self performSegueWithIdentifier:@"yesImpactSupp" sender:self];
-    } else {
+    } else if(s1117FollowUp){
+        [self performSegueWithIdentifier:@"yesFollowUp" sender:self];
+    }
+    else {
         [self performSegueWithIdentifier:@"noImpactSupp" sender:self];
-
     }
 }
 
@@ -213,12 +259,15 @@ NSString *filePath;
 
 - (IBAction)followUpNext:(id)sender{
     if(s1117FollowUp){
-        [self performSegueWithIdentifier:@"yesImpactSupp" sender:self];
+        [self performSegueWithIdentifier:@"yesFollowUp" sender:self];
     }
 }
 
 //event handler for when answer button is pressed only highlights the latest selected answer button.
 - (void)buttonClicked:(UIButton *)sender {
+    UIButton * next = (UIButton *)[self.view viewWithTag:998];
+    next.enabled = YES;
+    
     UIButton *button = (UIButton *)sender;
     
     if([button isSelected]==YES) {
@@ -230,7 +279,6 @@ NSString *filePath;
             [temp setSelected:NO];
         }
         [button setSelected:YES];
-        
     }
     [self answer:sender];
 }

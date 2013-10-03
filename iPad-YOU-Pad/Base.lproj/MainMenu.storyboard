@@ -157,17 +157,34 @@
                                     <action selector="goToCompletedSurveys" destination="YAk-kW-Jf3" eventType="touchUpInside" id="VlQ-yN-ia9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlG-uM-PW2">
+                                <rect key="frame" x="343" y="548" width="82" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToSettings" destination="YAk-kW-Jf3" eventType="touchUpInside" id="uSd-lP-hPh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gc1-Kx-guU" firstAttribute="centerX" secondItem="hzy-sn-Kh8" secondAttribute="centerX" type="default" id="1oQ-MB-Mlg"/>
                             <constraint firstItem="KEg-lh-EqT" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="270" id="5Sn-KR-m6j"/>
                             <constraint firstItem="0Sh-CV-zb2" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="140" id="Pxh-sz-TAs"/>
+                            <constraint firstAttribute="bottom" secondItem="JlG-uM-PW2" secondAttribute="bottom" constant="369" id="e0y-3n-XjS"/>
                             <constraint firstItem="KEg-lh-EqT" firstAttribute="centerX" secondItem="Gc1-Kx-guU" secondAttribute="centerX" type="user" id="f11-SM-FMi"/>
                             <constraint firstItem="nn8-nX-HSA" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="458" id="hca-5q-Qcw"/>
                             <constraint firstItem="KEg-lh-EqT" firstAttribute="centerX" secondItem="0Sh-CV-zb2" secondAttribute="centerX" type="default" id="lP7-0N-Bqr"/>
                             <constraint firstItem="hzy-sn-Kh8" firstAttribute="centerX" secondItem="nn8-nX-HSA" secondAttribute="centerX" type="user" id="lXk-MS-nCN"/>
                             <constraint firstItem="hzy-sn-Kh8" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="399" id="nhu-2i-hw2"/>
+                            <constraint firstItem="JlG-uM-PW2" firstAttribute="centerX" secondItem="nn8-nX-HSA" secondAttribute="centerX" type="default" id="p85-lW-l2s"/>
                             <constraint firstItem="nn8-nX-HSA" firstAttribute="centerX" secondItem="7wi-TC-zR8" secondAttribute="centerX" type="default" id="qnj-t1-aAZ"/>
                             <constraint firstItem="Gc1-Kx-guU" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="333" id="sbi-Wp-DUJ"/>
                         </constraints>

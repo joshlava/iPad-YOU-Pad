@@ -25,6 +25,8 @@
 		A26E6AB417FC4D2C006C9456 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = A26E6AB017FC4D2C006C9456 /* button.png */; };
 		A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E6AB217FC4D2C006C9456 /* KidsSurveysViewController.m */; };
 		A26E6AB717FC4D3B006C9456 /* KidsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26E6AB617FC4D3B006C9456 /* KidsSurveys.storyboard */; };
+		A289646117FD253C0071FC46 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289646017FD253C0071FC46 /* Settings.storyboard */; };
+		A289646417FD257B0071FC46 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A289646317FD257B0071FC46 /* SettingsViewController.m */; };
 		A2E0DC5317FD166B004E7327 /* EducatorsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */; };
 		A2E0DC5517FD167C004E7327 /* CompletedSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */; };
 		A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */; };
@@ -68,6 +70,9 @@
 		A26E6AB117FC4D2C006C9456 /* KidsSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidsSurveysViewController.h; sourceTree = "<group>"; };
 		A26E6AB217FC4D2C006C9456 /* KidsSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidsSurveysViewController.m; sourceTree = "<group>"; };
 		A26E6AB617FC4D3B006C9456 /* KidsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KidsSurveys.storyboard; sourceTree = "<group>"; };
+		A289646017FD253C0071FC46 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		A289646217FD257B0071FC46 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A289646317FD257B0071FC46 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EducatorsSurveys.storyboard; sourceTree = "<group>"; };
 		A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompletedSurveys.storyboard; sourceTree = "<group>"; };
 		A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentsSurveys.storyboard; sourceTree = "<group>"; };
@@ -136,6 +141,7 @@
 		A26E6A7F17FC4D04006C9456 /* iPad-YOU-Pad */ = {
 			isa = PBXGroup;
 			children = (
+				A289645F17FD24220071FC46 /* Settings */,
 				A2E0DC5117FD1601004E7327 /* MainMenu */,
 				A2E0DC5017FD15F0004E7327 /* EducatorsSurveys */,
 				A2E0DC4E17FD15D0004E7327 /* CompletedSurveys */,
@@ -186,6 +192,16 @@
 			);
 			name = KidsSurveys;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A289645F17FD24220071FC46 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A289646017FD253C0071FC46 /* Settings.storyboard */,
+				A289646217FD257B0071FC46 /* SettingsViewController.h */,
+				A289646317FD257B0071FC46 /* SettingsViewController.m */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		A2E0DC4C17FD15A4004E7327 /* ParentsSurveys */ = {
@@ -320,6 +336,7 @@
 				A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */,
 				A26E6A8D17FC4D04006C9456 /* MainMenu.storyboard in Resources */,
 				A26E6AB317FC4D2C006C9456 /* button (1).png in Resources */,
+				A289646117FD253C0071FC46 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 				A26E6A9017FC4D04006C9456 /* MainMenuViewController.m in Sources */,
 				A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */,
 				A26E6A8A17FC4D04006C9456 /* AppDelegate.m in Sources */,
+				A289646417FD257B0071FC46 /* SettingsViewController.m in Sources */,
 				A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */,
 				A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */,
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,

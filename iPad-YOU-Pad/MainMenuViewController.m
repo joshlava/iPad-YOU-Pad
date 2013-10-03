@@ -23,6 +23,13 @@ int pin = 1968;
     }
 }
 
+-(void)goToSettings{
+    UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Settings" bundle:nil];
+    UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
+    initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:initialSettingsVC animated:YES];
+}
+
 -(void)goToKidsSurveys{
     UIStoryboard *kidsStoryboard = [UIStoryboard storyboardWithName:@"KidsSurveys" bundle:nil];
     UIViewController *initialKidsVC = [kidsStoryboard instantiateInitialViewController];

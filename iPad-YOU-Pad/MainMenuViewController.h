@@ -18,6 +18,7 @@ extern int pin;
 -(IBAction)goToParentsSurveys;
 -(IBAction)goToEducatorsSurveys;
 -(IBAction)goToCompletedSurveys;
+-(IBAction)goToSettings;
 @property (weak, nonatomic) IBOutlet UITextField *pinField;
 
 @end

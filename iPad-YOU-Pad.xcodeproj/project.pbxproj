@@ -33,6 +33,11 @@
 		A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */; };
 		A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */; };
 		A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */; };
+		DE1BAFCC17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */; };
+		DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */; };
+		DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */; };
+		DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */; };
+		DE1BAFD517FD5D3900802872 /* Parents41ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,13 @@
 		A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedSurveysViewController.m; sourceTree = "<group>"; };
 		A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentsSurveysViewController.h; sourceTree = "<group>"; };
 		A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentsSurveysViewController.m; sourceTree = "<group>"; };
+		DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Checked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
+		DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
+		DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parentMenuViewController.h; sourceTree = "<group>"; };
+		DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parentMenuViewController.m; sourceTree = "<group>"; };
+		DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = SOURCE_ROOT; };
+		DE1BAFD317FD5D3800802872 /* Parents41ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parents41ViewController.h; sourceTree = "<group>"; };
+		DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parents41ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,9 @@
 		A26E6A7F17FC4D04006C9456 /* iPad-YOU-Pad */ = {
 			isa = PBXGroup;
 			children = (
+				DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */,
+				DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */,
+				DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */,
 				A289645F17FD24220071FC46 /* Settings */,
 				A2E0DC5117FD1601004E7327 /* MainMenu */,
 				A2E0DC5017FD15F0004E7327 /* EducatorsSurveys */,
@@ -210,6 +225,10 @@
 				A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */,
 				A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */,
 				A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */,
+				DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */,
+				DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */,
+				DE1BAFD317FD5D3800802872 /* Parents41ViewController.h */,
+				DE1BAFD417FD5D3800802872 /* Parents41ViewController.m */,
 			);
 			name = ParentsSurveys;
 			path = ..;
@@ -337,6 +356,9 @@
 				A26E6A8D17FC4D04006C9456 /* MainMenu.storyboard in Resources */,
 				A26E6AB317FC4D2C006C9456 /* button (1).png in Resources */,
 				A289646117FD253C0071FC46 /* Settings.storyboard in Resources */,
+				DE1BAFCC17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png in Resources */,
+				DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */,
+				DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +385,8 @@
 				A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */,
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,
 				A26E6A8617FC4D04006C9456 /* main.m in Sources */,
+				DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */,
+				DE1BAFD517FD5D3900802872 /* Parents41ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -480,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -496,6 +520,7 @@
 				GCC_PREFIX_HEADER = "iPad-YOU-Pad/iPad-YOU-Pad-Prefix.pch";
 				INFOPLIST_FILE = "iPad-YOU-Pad/iPad-YOU-Pad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -509,6 +534,7 @@
 				GCC_PREFIX_HEADER = "iPad-YOU-Pad/iPad-YOU-Pad-Prefix.pch";
 				INFOPLIST_FILE = "iPad-YOU-Pad/iPad-YOU-Pad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

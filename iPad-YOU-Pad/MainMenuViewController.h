@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+extern int pin;
+
 @interface MainMenuViewController : UIViewController
 
+-(IBAction)pinCheck;
+
 -(IBAction)goToKidsSurveys;
+-(IBAction)goToParentsSurveys;
+-(IBAction)goToEducatorsSurveys;
+-(IBAction)goToCompletedSurveys;
+@property (weak, nonatomic) IBOutlet UITextField *pinField;
 
 @end

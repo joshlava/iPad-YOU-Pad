@@ -126,6 +126,22 @@ NSString *filePath;
         NSLog(@"Over a year!");
         answers[button.tag / 100] = 17;
         selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Not at all"]){
+        NSLog(@"Not at all!");
+        answers[button.tag / 100] = 20;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Only a little"]){
+        NSLog(@"Only a little!");
+        answers[button.tag / 100] = 21;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"Quite a lot"]){
+        NSLog(@"Quite a lot!");
+        answers[button.tag / 100] = 22;
+        selected[button.tag / 100] = button.tag;
+    } else if([buttonTitle isEqualToString:@"A great deal"]){
+        NSLog(@"A great deal!");
+        answers[button.tag / 100] = 23;
+        selected[button.tag / 100] = button.tag;
     }
 }
 
@@ -162,10 +178,10 @@ NSString *filePath;
 
 //Handler to continue with impact supplement questions if yes is answered to question re: difficulties
 - (IBAction)childDifficultiesNext:(id)sender {
-    UIButton *yesMinor = (UIButton *)[self.view viewWithTag:2402];
-    UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:2403];
-    UIButton *yesSevere = (UIButton *)[self.view viewWithTag:2404];
-    UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:2401];
+    UIButton *yesMinor = (UIButton *)[self.view viewWithTag:2502];
+    UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:2503];
+    UIButton *yesSevere = (UIButton *)[self.view viewWithTag:2504];
+    UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:2501];
 
     if([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES){
         [self performSegueWithIdentifier:@"yesDifficulties" sender:self];

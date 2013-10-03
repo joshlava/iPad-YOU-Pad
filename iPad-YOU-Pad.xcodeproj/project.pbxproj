@@ -25,6 +25,12 @@
 		A26E6AB417FC4D2C006C9456 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = A26E6AB017FC4D2C006C9456 /* button.png */; };
 		A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26E6AB217FC4D2C006C9456 /* KidsSurveysViewController.m */; };
 		A26E6AB717FC4D3B006C9456 /* KidsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26E6AB617FC4D3B006C9456 /* KidsSurveys.storyboard */; };
+		A2E0DC5317FD166B004E7327 /* EducatorsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */; };
+		A2E0DC5517FD167C004E7327 /* CompletedSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */; };
+		A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */; };
+		A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */; };
+		A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */; };
+		A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +52,12 @@
 		A26E6A8317FC4D04006C9456 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A26E6A8517FC4D04006C9456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A26E6A8717FC4D04006C9456 /* iPad-YOU-Pad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iPad-YOU-Pad-Prefix.pch"; sourceTree = "<group>"; };
-		A26E6A8817FC4D04006C9456 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A26E6A8917FC4D04006C9456 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A26E6A8817FC4D04006C9456 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "iPad-YOU-Pad/AppDelegate.h"; sourceTree = "<group>"; };
+		A26E6A8917FC4D04006C9456 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "iPad-YOU-Pad/AppDelegate.m"; sourceTree = "<group>"; };
 		A26E6A8C17FC4D04006C9456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMenu.storyboard; sourceTree = "<group>"; };
-		A26E6A8E17FC4D04006C9456 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
-		A26E6A8F17FC4D04006C9456 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
-		A26E6A9117FC4D04006C9456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A26E6A8E17FC4D04006C9456 /* MainMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainMenuViewController.h; path = "iPad-YOU-Pad/MainMenuViewController.h"; sourceTree = "<group>"; };
+		A26E6A8F17FC4D04006C9456 /* MainMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainMenuViewController.m; path = "iPad-YOU-Pad/MainMenuViewController.m"; sourceTree = "<group>"; };
+		A26E6A9117FC4D04006C9456 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "iPad-YOU-Pad/Images.xcassets"; sourceTree = "<group>"; };
 		A26E6A9717FC4D04006C9456 /* iPad-YOU-PadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iPad-YOU-PadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E6A9817FC4D04006C9456 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A26E6AA017FC4D04006C9456 /* iPad-YOU-PadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPad-YOU-PadTests-Info.plist"; sourceTree = "<group>"; };
@@ -62,6 +68,15 @@
 		A26E6AB117FC4D2C006C9456 /* KidsSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidsSurveysViewController.h; sourceTree = "<group>"; };
 		A26E6AB217FC4D2C006C9456 /* KidsSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidsSurveysViewController.m; sourceTree = "<group>"; };
 		A26E6AB617FC4D3B006C9456 /* KidsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KidsSurveys.storyboard; sourceTree = "<group>"; };
+		A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EducatorsSurveys.storyboard; sourceTree = "<group>"; };
+		A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CompletedSurveys.storyboard; sourceTree = "<group>"; };
+		A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentsSurveys.storyboard; sourceTree = "<group>"; };
+		A2E0DC5817FD17DD004E7327 /* EducatorSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducatorSurveysViewController.h; sourceTree = "<group>"; };
+		A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducatorSurveysViewController.m; sourceTree = "<group>"; };
+		A2E0DC5B17FD17FC004E7327 /* CompletedSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedSurveysViewController.h; sourceTree = "<group>"; };
+		A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedSurveysViewController.m; sourceTree = "<group>"; };
+		A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentsSurveysViewController.h; sourceTree = "<group>"; };
+		A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentsSurveysViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +136,11 @@
 		A26E6A7F17FC4D04006C9456 /* iPad-YOU-Pad */ = {
 			isa = PBXGroup;
 			children = (
-				A26E6A8817FC4D04006C9456 /* AppDelegate.h */,
-				A26E6A8917FC4D04006C9456 /* AppDelegate.m */,
-				A26E6A8B17FC4D04006C9456 /* MainMenu.storyboard */,
-				A26E6A8E17FC4D04006C9456 /* MainMenuViewController.h */,
-				A26E6A8F17FC4D04006C9456 /* MainMenuViewController.m */,
-				A26E6A9117FC4D04006C9456 /* Images.xcassets */,
-				A26E6AAE17FC4D15006C9456 /* KidsSurvey */,
+				A2E0DC5117FD1601004E7327 /* MainMenu */,
+				A2E0DC5017FD15F0004E7327 /* EducatorsSurveys */,
+				A2E0DC4E17FD15D0004E7327 /* CompletedSurveys */,
+				A2E0DC4C17FD15A4004E7327 /* ParentsSurveys */,
+				A26E6AAE17FC4D15006C9456 /* KidsSurveys */,
 				A26E6A8017FC4D04006C9456 /* Supporting Files */,
 			);
 			path = "iPad-YOU-Pad";
@@ -162,7 +175,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A26E6AAE17FC4D15006C9456 /* KidsSurvey */ = {
+		A26E6AAE17FC4D15006C9456 /* KidsSurveys */ = {
 			isa = PBXGroup;
 			children = (
 				A26E6AB617FC4D3B006C9456 /* KidsSurveys.storyboard */,
@@ -171,7 +184,54 @@
 				A26E6AB117FC4D2C006C9456 /* KidsSurveysViewController.h */,
 				A26E6AB217FC4D2C006C9456 /* KidsSurveysViewController.m */,
 			);
-			name = KidsSurvey;
+			name = KidsSurveys;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A2E0DC4C17FD15A4004E7327 /* ParentsSurveys */ = {
+			isa = PBXGroup;
+			children = (
+				A2E0DC5617FD168B004E7327 /* ParentsSurveys.storyboard */,
+				A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */,
+				A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */,
+			);
+			name = ParentsSurveys;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A2E0DC4E17FD15D0004E7327 /* CompletedSurveys */ = {
+			isa = PBXGroup;
+			children = (
+				A2E0DC5417FD167C004E7327 /* CompletedSurveys.storyboard */,
+				A2E0DC5B17FD17FC004E7327 /* CompletedSurveysViewController.h */,
+				A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */,
+			);
+			name = CompletedSurveys;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A2E0DC5017FD15F0004E7327 /* EducatorsSurveys */ = {
+			isa = PBXGroup;
+			children = (
+				A2E0DC5217FD166B004E7327 /* EducatorsSurveys.storyboard */,
+				A2E0DC5817FD17DD004E7327 /* EducatorSurveysViewController.h */,
+				A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */,
+			);
+			name = EducatorsSurveys;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A2E0DC5117FD1601004E7327 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				A26E6A8817FC4D04006C9456 /* AppDelegate.h */,
+				A26E6A8917FC4D04006C9456 /* AppDelegate.m */,
+				A26E6A8B17FC4D04006C9456 /* MainMenu.storyboard */,
+				A26E6A8E17FC4D04006C9456 /* MainMenuViewController.h */,
+				A26E6A8F17FC4D04006C9456 /* MainMenuViewController.m */,
+				A26E6A9117FC4D04006C9456 /* Images.xcassets */,
+			);
+			name = MainMenu;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -251,10 +311,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E0DC5517FD167C004E7327 /* CompletedSurveys.storyboard in Resources */,
 				A26E6AB717FC4D3B006C9456 /* KidsSurveys.storyboard in Resources */,
 				A26E6A9217FC4D04006C9456 /* Images.xcassets in Resources */,
+				A2E0DC5317FD166B004E7327 /* EducatorsSurveys.storyboard in Resources */,
 				A26E6AB417FC4D2C006C9456 /* button.png in Resources */,
 				A26E6A8417FC4D04006C9456 /* InfoPlist.strings in Resources */,
+				A2E0DC5717FD168B004E7327 /* ParentsSurveys.storyboard in Resources */,
 				A26E6A8D17FC4D04006C9456 /* MainMenu.storyboard in Resources */,
 				A26E6AB317FC4D2C006C9456 /* button (1).png in Resources */,
 			);
@@ -276,7 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26E6A9017FC4D04006C9456 /* MainMenuViewController.m in Sources */,
+				A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */,
 				A26E6A8A17FC4D04006C9456 /* AppDelegate.m in Sources */,
+				A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */,
+				A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */,
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,
 				A26E6A8617FC4D04006C9456 /* main.m in Sources */,
 			);
@@ -315,6 +381,7 @@
 				A26E6A8C17FC4D04006C9456 /* Base */,
 			);
 			name = MainMenu.storyboard;
+			path = "iPad-YOU-Pad";
 			sourceTree = "<group>";
 		};
 		A26E6AA117FC4D04006C9456 /* InfoPlist.strings */ = {
@@ -489,6 +556,7 @@
 				A26E6AAA17FC4D04006C9456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A26E6AAB17FC4D04006C9456 /* Build configuration list for PBXNativeTarget "iPad-YOU-PadTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +565,7 @@
 				A26E6AAD17FC4D04006C9456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

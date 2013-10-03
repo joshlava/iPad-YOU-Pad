@@ -13,18 +13,27 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tv-Yj-MvP">
-                                <rect key="frame" x="341" y="140" width="86" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter Pin Code:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8c-9u-AkW">
+                                <rect key="frame" x="316" y="153" width="177" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhl-e2-6Gh">
-                                <rect key="frame" x="326" y="480" width="116" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kAp-cV-y5A">
+                                <rect key="frame" x="356" y="235" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="RFQ-Wz-bX5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ8-OE-feX">
+                                <rect key="frame" x="373" y="386" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Kids Surveys">
+                                <state key="normal" title="Enter">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,23 +41,28 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToKidsSurveys" destination="BYZ-38-t0r" eventType="touchUpInside" id="vVj-LF-fFS"/>
+                                    <segue destination="YAk-kW-Jf3" kind="push" id="qkI-RO-DXS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xhl-e2-6Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" type="default" id="1zH-Aq-enP"/>
-                            <constraint firstItem="xhl-e2-6Gh" firstAttribute="centerX" secondItem="1tv-Yj-MvP" secondAttribute="centerX" type="default" id="3Ok-ma-vQO"/>
-                            <constraint firstItem="1tv-Yj-MvP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="140" id="ZFT-EZ-NTE"/>
-                            <constraint firstItem="xhl-e2-6Gh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="480" id="xvR-i0-hXq"/>
+                            <constraint firstItem="vJ8-OE-feX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="386" id="APm-ql-v3s"/>
+                            <constraint firstItem="u8c-9u-AkW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="153" id="Kbe-Th-s15"/>
+                            <constraint firstItem="kAp-cV-y5A" firstAttribute="centerX" secondItem="u8c-9u-AkW" secondAttribute="centerX" type="default" id="SmY-ob-0eJ"/>
+                            <constraint firstItem="vJ8-OE-feX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="373" id="icu-N7-rdF"/>
+                            <constraint firstItem="vJ8-OE-feX" firstAttribute="centerX" secondItem="kAp-cV-y5A" secondAttribute="centerX" type="user" id="wl2-tQ-qcH"/>
+                            <constraint firstItem="kAp-cV-y5A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="235" id="yGn-K2-ZNH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ecV-xg-VmV"/>
+                    <connections>
+                        <outlet property="pinField" destination="kAp-cV-y5A" id="Ljf-F7-WEk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="-159"/>
+            <point key="canvasLocation" x="871" y="-115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QRj-Qd-Sxn">
@@ -67,6 +81,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zV-cm-nLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3" y="-115"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="jJY-93-4S0">
+            <objects>
+                <viewController id="YAk-kW-Jf3" customClass="MainMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7wi-TC-zR8">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sh-CV-zb2">
+                                <rect key="frame" x="341" y="140" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn8-nX-HSA">
+                                <rect key="frame" x="326" y="458" width="116" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Kids Surveys">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToKidsSurveys" destination="YAk-kW-Jf3" eventType="touchUpInside" id="rcj-kg-gx1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-sn-Kh8">
+                                <rect key="frame" x="319" y="399" width="131" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Parent Surveys">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToParentsSurveys" destination="YAk-kW-Jf3" eventType="touchUpInside" id="Gpn-Be-cFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-Kx-guU">
+                                <rect key="frame" x="310" y="333" width="148" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Educator Surveys">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToEducatorsSurveys" destination="YAk-kW-Jf3" eventType="touchUpInside" id="TTL-w7-GNd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEg-lh-EqT">
+                                <rect key="frame" x="303" y="270" width="162" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Completed Surveys">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToCompletedSurveys" destination="YAk-kW-Jf3" eventType="touchUpInside" id="VlQ-yN-ia9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gc1-Kx-guU" firstAttribute="centerX" secondItem="hzy-sn-Kh8" secondAttribute="centerX" type="default" id="1oQ-MB-Mlg"/>
+                            <constraint firstItem="KEg-lh-EqT" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="270" id="5Sn-KR-m6j"/>
+                            <constraint firstItem="0Sh-CV-zb2" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="140" id="Pxh-sz-TAs"/>
+                            <constraint firstItem="KEg-lh-EqT" firstAttribute="centerX" secondItem="Gc1-Kx-guU" secondAttribute="centerX" type="user" id="f11-SM-FMi"/>
+                            <constraint firstItem="nn8-nX-HSA" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="458" id="hca-5q-Qcw"/>
+                            <constraint firstItem="KEg-lh-EqT" firstAttribute="centerX" secondItem="0Sh-CV-zb2" secondAttribute="centerX" type="default" id="lP7-0N-Bqr"/>
+                            <constraint firstItem="hzy-sn-Kh8" firstAttribute="centerX" secondItem="nn8-nX-HSA" secondAttribute="centerX" type="user" id="lXk-MS-nCN"/>
+                            <constraint firstItem="hzy-sn-Kh8" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="399" id="nhu-2i-hw2"/>
+                            <constraint firstItem="nn8-nX-HSA" firstAttribute="centerX" secondItem="7wi-TC-zR8" secondAttribute="centerX" type="default" id="qnj-t1-aAZ"/>
+                            <constraint firstItem="Gc1-Kx-guU" firstAttribute="top" secondItem="7wi-TC-zR8" secondAttribute="top" constant="333" id="sbi-Wp-DUJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ucs-pv-DnU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9T-52-jXi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-115"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

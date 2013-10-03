@@ -1,26 +1,24 @@
 //
-//  Parents41ViewController.m
+//  Parents43ViewController.m
 //  iPad-YOU-Pad
 //
 //  Created by Yuki Robson on 3/10/13.
 //  Copyright (c) 2013 Andrew Edwards. All rights reserved.
 //
 
-#import "Parents41ViewController.h"
+#import "Parents43ViewController.h"
 #import "parentMenuViewController.h"
 
-
-int checkBox1[8];
+int checkBox3[9];
 bool firstStartup[8];
+int page;
 int questions;
 
-@interface Parents41ViewController ()
-
+@interface Parents43ViewController ()
 
 @end
 
-@implementation Parents41ViewController
-
+@implementation Parents43ViewController
 @synthesize nextButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,26 +32,17 @@ int questions;
 
 - (void)viewDidLoad
 {
-    questions = 8;
-    page = 0;
+    page = 3;
+    questions = 9;
     nextButton.enabled = NO;
     nextButton.alpha = 0.3;
     NSLog(@"hi1");
     if(firstStartup[page])
     {
         firstStartup[page] = FALSE;
-        for(int i = 0; i < 8; i++) {
-            checkBox1[i] = 0;
+        for(int i = 0; i < questions; i++) {
+            checkBox3[i] = 0;
         }
-        NSLog(@"hi");
-        fm = [NSFileManager defaultManager];
-        
-        //create the filepath
-        paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        docDir = [paths objectAtIndex:0];
-        filePath = [docDir stringByAppendingPathComponent:@"answers.txt"];
-        //create the answer file
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
     }
     
     for(int i = 0; i < 10000; i+=100){
@@ -66,13 +55,13 @@ int questions;
     //check if already answered checkBox
     for(int i = 0; i < questions; i++)
     {
-        if(checkBox1[i] != 0)
+        if(checkBox3[i] != 0)
         {
-            int temp = checkBox1[i]+((i+1)*100); //get correct checkbox tag
+            int temp = checkBox3[i]+((i+1)*100); //get correct checkbox tag
             UIButton *tempButton = (UIButton *)[self.view viewWithTag:(temp)];
             [tempButton setBackgroundImage:[UIImage imageNamed:@"Very-Basic-Checked-checkbox-icon.png"] forState:UIControlStateSelected];
             [tempButton setSelected:YES];
-                                            
+            
         }
     }
     [self checkNextButton];
@@ -80,19 +69,19 @@ int questions;
 	// Do any additional setup after loading the view.
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-//check if all checkboxes were answered
 - (void)checkNextButton {
     
     BOOL flag = YES;
     for(int i = 0; i < questions; i+=1)
     {
-        if(checkBox1[i] <=0)
+        if(checkBox3[i] <=0)
         {
             flag = NO;
         }
@@ -110,7 +99,7 @@ int questions;
     //write to file
     for(int i = 0; i < questions; i++)
     {
-        NSLog(@"%d",checkBox1[i]);
+        NSLog(@"%d",checkBox3[i]);
     }
     
 }
@@ -123,7 +112,7 @@ int questions;
         [button setSelected:YES];
     } else {
         int checkBoxRow = button.tag/100 - 1;
-        checkBox1[checkBoxRow] = button.tag%100;
+        checkBox3[checkBoxRow] = button.tag%100;
         int round = ((button.tag / 100) * 100) + 1;
         for(int i = round; i < (round + 3); i++){
             UIButton * temp = (UIButton *)[self.view viewWithTag:i];

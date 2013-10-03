@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 extern int surveyNum;
-extern int checkBox[8][8];
+extern int checkBox1[8];
+extern int checkBox2[8];
+extern int checkBox3[9];
+extern int checkBox4[3];
+extern int checkBox5[5];
+int page;
 
 extern bool firstStartup[8];
 

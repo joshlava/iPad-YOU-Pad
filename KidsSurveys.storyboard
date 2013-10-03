@@ -2780,146 +2780,105 @@
             </objects>
             <point key="canvasLocation" x="6984" y="9040"/>
         </scene>
+        <!--Kids Surveys View Controller-->
+        <scene sceneID="py1-y2-k9J">
+            <objects>
+                <viewController id="e9g-vF-jR3" customClass="KidsSurveysViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CtR-GO-DiM">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Since coming to the service, are your problems:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NCs-1K-Ndc">
+                                <rect key="frame" x="111" y="264" width="581" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="T5C-9H-iic">
+                                <rect key="frame" x="40" y="377" width="119" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Much worse" backgroundImage="button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rPI-FD-ta4">
+                                <rect key="frame" x="176" y="377" width="119" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="A bit worse" backgroundImage="button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bow-ul-N72">
+                                <rect key="frame" x="313" y="377" width="135" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="About the same" backgroundImage="button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GSp-Fy-Rsy">
+                                <rect key="frame" x="595" y="854" width="102" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Next" backgroundImage="button (1).png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3304" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="onr-SB-bdD">
+                                <rect key="frame" x="468" y="377" width="119" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="A bit better" backgroundImage="button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3305" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y6A-Sq-JJV">
+                                <rect key="frame" x="604" y="377" width="119" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Much better" backgroundImage="button.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yj4-hq-a6V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBA-DP-ckP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1982" y="9384"/>
+        </scene>
     </scenes>
     <resources>
         <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button (1).png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
-        <image name="button.png" width="95" height="50"/>
         <image name="button.png" width="95" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -2930,6 +2889,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="bdX-yB-LMF"/>
         <segue reference="i3S-8d-f3j"/>
-        <segue reference="1bB-rf-Y3H"/>
+        <segue reference="rTG-i4-WIZ"/>
     </inferredMetricsTieBreakers>
 </document>

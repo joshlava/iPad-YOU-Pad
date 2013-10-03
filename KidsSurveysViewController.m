@@ -10,6 +10,7 @@
 
 BOOL runOnce = true;
 BOOL s1117ImpactSupplement = false;
+BOOL s1117FollowUp = false;
 int answers[40];
 int selected[40];
 NSFileManager *fm;
@@ -206,6 +207,15 @@ NSString *filePath;
     }
 }
 
+- (IBAction)s1117FollowUpButtonPress:(id)sender{
+    s1117FollowUp = true;
+}
+
+- (IBAction)followUpNext:(id)sender{
+    if(s1117FollowUp){
+        [self performSegueWithIdentifier:@"yesImpactSupp" sender:self];
+    }
+}
 
 //event handler for when answer button is pressed only highlights the latest selected answer button.
 - (void)buttonClicked:(UIButton *)sender {

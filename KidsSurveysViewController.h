@@ -10,6 +10,7 @@
 
 extern BOOL runOnce;
 extern BOOL s1117ImpactSupplement;
+extern BOOL s1117FollowUp;
 extern int answers[40];
 extern int selected[40];
 extern NSFileManager *fm;
@@ -29,6 +30,8 @@ extern NSString *filePath;
 - (IBAction)childDifficultiesNext:(id)sender;
 - (IBAction)s1117ImpactSuppButtonPress:(id)sender;
 - (IBAction)impactSuppNext:(id)sender;
+- (IBAction)s1117FollowUpButtonPress:(id)sender;
+- (IBAction)followUpNext:(id)sender;
 - (IBAction)goToMainMenu;
 
 

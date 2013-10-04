@@ -10,15 +10,16 @@
 
 extern int pin;
 
-@interface MainMenuViewController : UIViewController
-
--(IBAction)pinCheck;
+@interface MainMenuViewController : UIViewController{
+    
+    IBOutlet UITextField *pinField;
+}
 
 -(IBAction)goToKidsSurveys;
 -(IBAction)goToParentsSurveys;
 -(IBAction)goToEducatorsSurveys;
 -(IBAction)goToCompletedSurveys;
 -(IBAction)goToSettings;
-@property (weak, nonatomic) IBOutlet UITextField *pinField;
+- (IBAction)checkPin:(id)sender;
 
 @end

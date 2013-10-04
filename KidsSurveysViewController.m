@@ -40,24 +40,13 @@ NSString *researcherNameString;
     
     //run this section of code only once, when a survey is first started
     if(runOnce){
+        
         //initialize answers and selected array
         for(int i = 0; i < 50; i++){
             answers[i] = -1;
             selected[i] = -1;
         }
         
-        next.enabled = YES;
-        
-        /*fm = [NSFileManager defaultManager];
-        
-        //create the filepath
-        paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        docDir = [paths objectAtIndex:0];
-        filePath = [docDir stringByAppendingPathComponent:@"answers.txt"];
-        
-        //create the answer file
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-        NSLog(@"file created at: %@",docDir);*/
         
         runOnce = false;
     }
@@ -308,17 +297,14 @@ NSString *researcherNameString;
     [self dismissModalViewControllerAnimated:YES];
 }
 
+// handler to create the answer file as a .txt file. File name is in format of 'survey name'-'researchers name'-'child's unique ID'
 - (IBAction)createFile:(id)sender {
     
+    //get the name of the survey selected
     UIButton *button = (UIButton *)sender;
     NSString *buttonTitle = button.currentTitle;
     
-    /*//initialize answers and selected array
-    for(int i = 0; i < 50; i++){
-        answers[i] = -1;
-        selected[i] = -1;
-    }*/
-    
+    //create a file manager
     fm = [NSFileManager defaultManager];
     
     //create the filepath
@@ -331,10 +317,21 @@ NSString *researcherNameString;
     NSLog(@"file created at: %@",docDir);
 }
 
+// handler to save identifying info entered by staff at start of new survey
 - (IBAction)saveInfo:(id)sender {
     researcherNameString = researcherName.text;
     kidsIDString = kidsID.text;
     kidsNameString = kidsName.text;
+}
+
+//handler to ensure all text fields are nonempty before allowing user to move on
+- (IBAction)infoEntered:(id)sender {
+    UIButton * next = (UIButton *)[self.view viewWithTag:998];
+    if(![researcherName.text isEqual: @""] && ![kidsName.text isEqual: @""] && ![kidsID.text isEqual: @""]){
+        next.enabled = YES;
+    } else {
+        next.enabled = NO;
+    }
 }
 
 - (void)viewDidUnload

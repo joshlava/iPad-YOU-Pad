@@ -16,18 +16,19 @@ int pin = 1968;
 
 @implementation MainMenuViewController
 
--(void)pinCheck{
-    int pinEntered = [_pinField.text intValue];
-    if(pin == pinEntered){
-        //Enter button send you to main menu
-    }
-}
+
 
 -(void)goToSettings{
     UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Settings" bundle:nil];
     UIViewController *initialSettingsVC = [settingsStoryboard instantiateInitialViewController];
     initialSettingsVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:initialSettingsVC animated:YES];
+}
+
+- (IBAction)checkPin:(id)sender {
+    if(pin == [pinField.text intValue]){
+        [self performSegueWithIdentifier:@"pinCorrect" sender:self];
+    }
 }
 
 -(void)goToKidsSurveys{
@@ -61,7 +62,7 @@ int pin = 1968;
 
 - (void)viewDidLoad
 {
-    _pinField.keyboardType = UIKeyboardTypeNumberPad;
+    pinField.keyboardType = UIKeyboardTypeNumberPad;
     [super viewDidLoad];
     UIColor * circleColorPattern = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bg.jpg"]];
     [self.view setBackgroundColor:circleColorPattern];

@@ -39,6 +39,7 @@ extern NSString *researcherName;
 - (IBAction)goToMainMenu;
 - (IBAction)createFile:(id)sender;
 - (IBAction)saveInfo:(id)sender;
+- (IBAction)infoEntered:(id)sender;
 
 
 @end

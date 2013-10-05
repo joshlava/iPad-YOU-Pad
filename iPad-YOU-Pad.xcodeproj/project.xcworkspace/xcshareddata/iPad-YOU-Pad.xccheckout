@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EFBFF1F-5E19-42C1-B788-CB0E08CE4C0E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iPad-YOU-Pad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C9781A13-8CCB-47B5-A5BE-4BADD74B1649</key>
+		<string>https://github.com/andrew-computerscience/iPad-YOU-Pad.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPad-YOU-Pad.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C9781A13-8CCB-47B5-A5BE-4BADD74B1649</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andrew-computerscience/iPad-YOU-Pad.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C9781A13-8CCB-47B5-A5BE-4BADD74B1649</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C9781A13-8CCB-47B5-A5BE-4BADD74B1649</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPad-YOU-Pad</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -16,7 +16,13 @@ int pin = 1968;
 
 @implementation MainMenuViewController
 
+#pragma mark - UITextField Delegate
 
+//handler so when user presses return on keyboard, runs checkPin action
+- (BOOL)textFieldShouldReturn:(UITextField *)pinField {
+    [self checkPin:self];
+    return true;    
+}
 
 -(void)goToSettings{
     UIStoryboard *settingsStoryboard = [UIStoryboard storyboardWithName:@"Settings" bundle:nil];
@@ -25,8 +31,10 @@ int pin = 1968;
     [self presentModalViewController:initialSettingsVC animated:YES];
 }
 
+//handler to check the pin the user entered, if correct, proceed, otherwise do not.
 - (IBAction)checkPin:(id)sender {
     if(pin == [pinField.text intValue]){
+        pinField.text = @"";
         [self performSegueWithIdentifier:@"pinCorrect" sender:self];
     }
 }
@@ -66,6 +74,8 @@ int pin = 1968;
     [super viewDidLoad];
     UIColor * circleColorPattern = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bg.jpg"]];
     [self.view setBackgroundColor:circleColorPattern];
+    
+    pinField.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

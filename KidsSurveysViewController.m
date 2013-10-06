@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  KidsSurveysViewController.m
 //
 //
 //  Created by Andrew Edwards on 23/09/13.
@@ -11,8 +11,9 @@
 BOOL runOnce = true;
 BOOL s1117ImpactSupplement = false;
 BOOL s1117FollowUp = false;
-int answers[50];
-int selected[50];
+BOOL s1117YR1a = false;
+int answers[75];
+int selected[75];
 NSFileManager *fm;
 NSArray *paths;
 NSString *docDir;
@@ -42,7 +43,7 @@ NSString *researcherNameString;
     if(runOnce){
         
         //initialize answers and selected array
-        for(int i = 0; i < 50; i++){
+        for(int i = 0; i < 75; i++){
             answers[i] = -1;
             selected[i] = -1;
         }
@@ -63,7 +64,7 @@ NSString *researcherNameString;
 
     
     //recover state of previously selected answers when a user goes back to a previous question, then forward again to already answered questions
-    for(int i = 0; i < 50; i++){
+    for(int i = 0; i < 75; i++){
         if(selected[i] != -1){
             UIButton *temp = (UIButton *)[self.view viewWithTag:selected[i]];
             [temp setSelected:YES];
@@ -73,7 +74,7 @@ NSString *researcherNameString;
     }
     
     //when the impact supplement or follow up survey is chosen, change the title of the submit button for the last common question page to a next button
-    if(s1117ImpactSupplement || s1117FollowUp){
+    if(s1117ImpactSupplement || s1117FollowUp || s1117YR1a){
         UIButton *temp = (UIButton *)[self.view viewWithTag:998];
         [temp setTitle:@"Next" forState:UIControlStateNormal];
     }
@@ -175,6 +176,18 @@ NSString *researcherNameString;
         NSLog(@"Much better!");
         answers[button.tag / 100] = 34;
         selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"No"]){
+        NSLog(@"No!");
+        answers[button.tag / 100] = 40;
+        selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"A little"]){
+        NSLog(@"A little!");
+        answers[button.tag / 100] = 41;
+        selected[button.tag / 100] = button.tag;
+    }  else if([buttonTitle isEqualToString:@"A lot"]){
+        NSLog(@"A lot!");
+        answers[button.tag / 100] = 42;
+        selected[button.tag / 100] = button.tag;
     }
 }
 
@@ -197,7 +210,7 @@ NSString *researcherNameString;
             //concatenate answers into one single string, answerString
             NSMutableString *answerString = [NSMutableString string];
             int i = 0;
-            while(answers[i] < 50){
+            while(answers[i] < 75){
                 if(answers[i] != -1){
                     [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
                 }
@@ -242,6 +255,8 @@ NSString *researcherNameString;
         [self performSegueWithIdentifier:@"yesImpactSupp" sender:self];
     } else if(s1117FollowUp){
         [self performSegueWithIdentifier:@"yesFollowUp" sender:self];
+    } else if (s1117YR1a){
+        [self performSegueWithIdentifier:@"yesYR1a" sender:self];
     }
     else {
         [self performSegueWithIdentifier:@"noImpactSuppOrFollowUp" sender:self];
@@ -251,6 +266,10 @@ NSString *researcherNameString;
 //handler to make sure the follow up module is loaded when follow up survey selected
 - (IBAction)s1117FollowUpButtonPress:(id)sender{
     s1117FollowUp = true;
+}
+
+- (IBAction)s1117YR1aButtonPress:(id)sender{
+    s1117YR1a = true;
 }
 
 //Handler to continue with additional follow up survey questions if yes is answered to question re: difficulties
@@ -264,6 +283,20 @@ NSString *researcherNameString;
         [self performSegueWithIdentifier:@"yesDifficultiesFollowUp" sender:self];
     } else if([noDifficulties isSelected]==YES){
         [self performSegueWithIdentifier:@"noDifficultiesFollowUp" sender:self];
+    }
+}
+
+//Handler to continue with additional YR1a survey questions if yes is answered to question re: difficulties
+- (IBAction)childDifficultiesNextYR1a:(id)sender {
+    UIButton *yesMinor = (UIButton *)[self.view viewWithTag:4602];
+    UIButton *yesDefinite = (UIButton *)[self.view viewWithTag:4603];
+    UIButton *yesSevere = (UIButton *)[self.view viewWithTag:4604];
+    UIButton *noDifficulties = (UIButton *)[self.view viewWithTag:4601];
+    
+    if(([yesMinor isSelected]==YES || [yesDefinite isSelected]==YES || [yesSevere isSelected]==YES)){
+        [self performSegueWithIdentifier:@"yesDifficultiesYR1a" sender:self];
+    } else if([noDifficulties isSelected]==YES){
+        [self performSegueWithIdentifier:@"noDifficultiesYR1a" sender:self];
     }
 }
 

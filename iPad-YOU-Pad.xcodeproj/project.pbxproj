@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09BFD96117FD808400CAE2EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09BFD96017FD808400CAE2EF /* Default-568h@2x.png */; };
+		0E8675981801DD22002113C6 /* TeachersSurvey2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8675971801DD22002113C6 /* TeachersSurvey2ViewController.m */; };
 		A26E6A7A17FC4D04006C9456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7917FC4D04006C9456 /* Foundation.framework */; };
 		A26E6A7C17FC4D04006C9456 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7B17FC4D04006C9456 /* CoreGraphics.framework */; };
 		A26E6A7E17FC4D04006C9456 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26E6A7D17FC4D04006C9456 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		09BFD96017FD808400CAE2EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E8675961801DD22002113C6 /* TeachersSurvey2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersSurvey2ViewController.h; sourceTree = "<group>"; };
+		0E8675971801DD22002113C6 /* TeachersSurvey2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersSurvey2ViewController.m; sourceTree = "<group>"; };
 		A26E6A7617FC4D04006C9456 /* iPad-YOU-Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPad-YOU-Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26E6A7917FC4D04006C9456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A26E6A7B17FC4D04006C9456 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -232,6 +235,8 @@
 				DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */,
 				DE1BAFD317FD5D3800802872 /* TeachersViewController.h */,
 				DE1BAFD417FD5D3800802872 /* TeachersViewController.m */,
+				0E8675961801DD22002113C6 /* TeachersSurvey2ViewController.h */,
+				0E8675971801DD22002113C6 /* TeachersSurvey2ViewController.m */,
 			);
 			name = TeachersSurvey;
 			path = ..;
@@ -381,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8675981801DD22002113C6 /* TeachersSurvey2ViewController.m in Sources */,
 				A26E6A9017FC4D04006C9456 /* MainMenuViewController.m in Sources */,
 				A2E0DC6017FD182D004E7327 /* TeachersSurveysViewController.m in Sources */,
 				A26E6A8A17FC4D04006C9456 /* AppDelegate.m in Sources */,

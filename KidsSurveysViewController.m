@@ -18,6 +18,7 @@ NSFileManager *fm;
 NSArray *paths;
 NSString *docDir;
 NSString *filePath;
+NSString *hiddenFilePath;
 NSString *kidsIDString;
 NSString *kidsNameString;
 NSString *researcherNameString;
@@ -198,6 +199,18 @@ NSString *researcherNameString;
     NSString *buttonTitle = button.currentTitle;
     
     if([buttonTitle isEqualToString:@"Submit"]){
+        
+        //concatenate answers into one single string, answerString
+        NSMutableString *answerString = [NSMutableString string];
+        int i = 0;
+        while(answers[i] < 75){
+            if(answers[i] != -1){
+                [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
+            }
+            i++;
+        }
+        
+        //write to user accessible file
         if ([fm fileExistsAtPath:filePath]) {
             //create file handle
             NSFileHandle *myHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
@@ -207,22 +220,26 @@ NSString *researcherNameString;
                 //failed to open file
             }
             
-            //concatenate answers into one single string, answerString
-            NSMutableString *answerString = [NSMutableString string];
-            int i = 0;
-            while(answers[i] < 75){
-                if(answers[i] != -1){
-                    [answerString appendString:[NSString stringWithFormat:@"%d, ", answers[i]]];
-                }
-                i++;
-            }
-            
-            //write the answers to file
             NSData *theData = [answerString dataUsingEncoding:NSUTF8StringEncoding];
             [myHandle seekToEndOfFile];
             [myHandle writeData:theData];
             [myHandle closeFile];
             
+        }
+        
+        //write to hidden file
+        if([fm fileExistsAtPath:hiddenFilePath]){
+            NSFileHandle *myHiddenHandle =  [NSFileHandle fileHandleForWritingAtPath:hiddenFilePath];
+            
+            if(myHiddenHandle == nil){
+                exit(0);
+                //failed to open file
+            }
+            
+            NSData *theData = [answerString dataUsingEncoding:NSUTF8StringEncoding];
+            [myHiddenHandle seekToEndOfFile];
+            [myHiddenHandle writeData:theData];
+            [myHiddenHandle closeFile];
         }
     }
 }
@@ -340,14 +357,19 @@ NSString *researcherNameString;
     //create a file manager
     fm = [NSFileManager defaultManager];
     
-    //create the filepath
+    //create the filepath for both files
     paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *hiddenPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     docDir = [paths objectAtIndex:0];
+    NSString *hiddenDirectory = [hiddenPaths objectAtIndex:0];
     filePath = [docDir stringByAppendingPathComponent: [NSString stringWithFormat:@"%@-%@-%@", buttonTitle, researcherNameString, kidsIDString]];
+    hiddenFilePath = [hiddenDirectory stringByAppendingPathComponent: [NSString stringWithFormat:@"%@-%@-%@", buttonTitle, researcherNameString, kidsIDString]];
     
     //create the answer file
     [fm createFileAtPath:filePath contents:nil attributes:nil];
+    [fm createFileAtPath:hiddenFilePath contents:nil attributes:nil];
     NSLog(@"file created at: %@",docDir);
+    NSLog(@"hidden file created at: %@",hiddenDirectory);
 }
 
 // handler to save identifying info entered by staff at start of new survey

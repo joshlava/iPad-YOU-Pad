@@ -18,6 +18,7 @@ extern NSFileManager *fm;
 extern NSArray *paths;
 extern NSString *docDir;
 extern NSString *filePath;
+extern NSString *hiddenFilePath;
 extern NSString *kidsID;
 extern NSString *kidsName;
 extern NSString *researcherName;

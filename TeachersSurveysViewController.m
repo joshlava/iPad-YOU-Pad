@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Andrew Edwards. All rights reserved.
 //
 
-#import "ParentsSurveysViewController.h"
+#import "TeachersSurveysViewController.h"
 
 @interface ParentsSurveysViewController ()
 

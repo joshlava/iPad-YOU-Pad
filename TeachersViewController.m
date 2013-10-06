@@ -7,7 +7,7 @@
 //
 
 #import "TeachersViewController.h"
-#import "parentMenuViewController.h"
+#import "TeachersMenuViewController.h"
 
 
 int checkBox[8][8];

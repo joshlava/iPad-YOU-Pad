@@ -33,10 +33,10 @@
 		A2E0DC5717FD168B004E7327 /* TeachersSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */; };
 		A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */; };
 		A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */; };
-		A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */; };
+		A2E0DC6017FD182D004E7327 /* TeachersSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */; };
 		DE1BAFCC17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */; };
 		DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */; };
-		DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */; };
+		DE1BAFD017FD35DC00802872 /* TeachersMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */; };
 		DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */; };
 		DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* TeachersViewController.m */; };
 /* End PBXBuildFile section */
@@ -87,12 +87,12 @@
 		A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducatorSurveysViewController.m; sourceTree = "<group>"; };
 		A2E0DC5B17FD17FC004E7327 /* CompletedSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedSurveysViewController.h; sourceTree = "<group>"; };
 		A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedSurveysViewController.m; sourceTree = "<group>"; };
-		A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentsSurveysViewController.h; sourceTree = "<group>"; };
-		A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentsSurveysViewController.m; sourceTree = "<group>"; };
+		A2E0DC5E17FD182D004E7327 /* TeachersSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersSurveysViewController.h; sourceTree = "<group>"; };
+		A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersSurveysViewController.m; sourceTree = "<group>"; };
 		DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Checked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
 		DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
-		DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parentMenuViewController.h; sourceTree = "<group>"; };
-		DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parentMenuViewController.m; sourceTree = "<group>"; };
+		DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersMenuViewController.h; sourceTree = "<group>"; };
+		DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersMenuViewController.m; sourceTree = "<group>"; };
 		DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = SOURCE_ROOT; };
 		DE1BAFD317FD5D3800802872 /* TeachersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersViewController.h; sourceTree = "<group>"; };
 		DE1BAFD417FD5D3800802872 /* TeachersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersViewController.m; sourceTree = "<group>"; };
@@ -226,10 +226,10 @@
 			isa = PBXGroup;
 			children = (
 				A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */,
-				A2E0DC5E17FD182D004E7327 /* ParentsSurveysViewController.h */,
-				A2E0DC5F17FD182D004E7327 /* ParentsSurveysViewController.m */,
-				DE1BAFCE17FD35DC00802872 /* parentMenuViewController.h */,
-				DE1BAFCF17FD35DC00802872 /* parentMenuViewController.m */,
+				A2E0DC5E17FD182D004E7327 /* TeachersSurveysViewController.h */,
+				A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */,
+				DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */,
+				DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */,
 				DE1BAFD317FD5D3800802872 /* TeachersViewController.h */,
 				DE1BAFD417FD5D3800802872 /* TeachersViewController.m */,
 			);
@@ -382,14 +382,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26E6A9017FC4D04006C9456 /* MainMenuViewController.m in Sources */,
-				A2E0DC6017FD182D004E7327 /* ParentsSurveysViewController.m in Sources */,
+				A2E0DC6017FD182D004E7327 /* TeachersSurveysViewController.m in Sources */,
 				A26E6A8A17FC4D04006C9456 /* AppDelegate.m in Sources */,
 				A289646417FD257B0071FC46 /* SettingsViewController.m in Sources */,
 				A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */,
 				A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */,
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,
 				A26E6A8617FC4D04006C9456 /* main.m in Sources */,
-				DE1BAFD017FD35DC00802872 /* parentMenuViewController.m in Sources */,
+				DE1BAFD017FD35DC00802872 /* TeachersMenuViewController.m in Sources */,
 				DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

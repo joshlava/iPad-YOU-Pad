@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Andrew Edwards. All rights reserved.
 //
 
-#import "parentMenuViewController.h"
-#import "ParentsSurveysViewController.h"
+#import "TeachersMenuViewController.h"
+#import "TeachersSurveysViewController.h"
 
 int surveyNum;
 

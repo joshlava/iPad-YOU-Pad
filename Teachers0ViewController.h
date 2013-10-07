@@ -14,7 +14,7 @@ extern NSArray *paths;
 extern NSString *docDir;
 extern NSString *filePath;
 
-@interface Parents41ViewController : UIViewController
+@interface Teachers0ViewController : UIViewController
 
 
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;

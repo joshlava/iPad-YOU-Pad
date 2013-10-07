@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Andrew Edwards. All rights reserved.
 //
 
-#import "TeachersViewController.h"
+#import "Teachers0ViewController.h"
 #import "TeachersMenuViewController.h"
 
 
@@ -14,12 +14,12 @@ int checkBox[8][8];
 bool firstStartup[8];
 int page = 0;
 
-@interface Parents41ViewController ()
+@interface Teachers0ViewController ()
 
 
 @end
 
-@implementation Parents41ViewController
+@implementation Teachers0ViewController
 
 @synthesize nextButton;
 

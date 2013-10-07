@@ -39,7 +39,7 @@
 		DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */; };
 		DE1BAFD017FD35DC00802872 /* TeachersMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */; };
 		DE1BAFD217FD3CE600802872 /* Bullet-Point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */; };
-		DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* TeachersViewController.m */; };
+		DE1BAFD517FD5D3900802872 /* Teachers0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFD417FD5D3800802872 /* Teachers0ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,8 +97,8 @@
 		DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersMenuViewController.h; sourceTree = "<group>"; };
 		DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersMenuViewController.m; sourceTree = "<group>"; };
 		DE1BAFD117FD3CE600802872 /* Bullet-Point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bullet-Point.jpg"; sourceTree = SOURCE_ROOT; };
-		DE1BAFD317FD5D3800802872 /* TeachersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersViewController.h; sourceTree = "<group>"; };
-		DE1BAFD417FD5D3800802872 /* TeachersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersViewController.m; sourceTree = "<group>"; };
+		DE1BAFD317FD5D3800802872 /* Teachers0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teachers0ViewController.h; sourceTree = "<group>"; };
+		DE1BAFD417FD5D3800802872 /* Teachers0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teachers0ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,8 +233,8 @@
 				A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */,
 				DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */,
 				DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */,
-				DE1BAFD317FD5D3800802872 /* TeachersViewController.h */,
-				DE1BAFD417FD5D3800802872 /* TeachersViewController.m */,
+				DE1BAFD317FD5D3800802872 /* Teachers0ViewController.h */,
+				DE1BAFD417FD5D3800802872 /* Teachers0ViewController.m */,
 				0E8675961801DD22002113C6 /* TeachersSurvey2ViewController.h */,
 				0E8675971801DD22002113C6 /* TeachersSurvey2ViewController.m */,
 			);
@@ -396,7 +396,7 @@
 				A26E6AB517FC4D2C006C9456 /* KidsSurveysViewController.m in Sources */,
 				A26E6A8617FC4D04006C9456 /* main.m in Sources */,
 				DE1BAFD017FD35DC00802872 /* TeachersMenuViewController.m in Sources */,
-				DE1BAFD517FD5D3900802872 /* TeachersViewController.m in Sources */,
+				DE1BAFD517FD5D3900802872 /* Teachers0ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

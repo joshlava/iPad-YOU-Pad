@@ -1,5 +1,5 @@
 //
-//  parentMenuViewController.h
+//  TeacherMenuViewController.h
 //  iPad-YOU-Pad
 //
 //  Created by Yuki Robson on 3/10/13.

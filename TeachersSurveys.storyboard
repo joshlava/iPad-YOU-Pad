@@ -36,22 +36,20 @@
                                 </state>
                                 <connections>
                                     <action selector="Survey1Action:" destination="Y3i-KE-YZz" eventType="touchUpInside" id="HgQ-Xb-Rje"/>
-                                    <segue destination="kJ9-JC-0Ql" kind="push" id="DaV-Sc-Ny4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JjX-KS-1xZ">
-                                <rect key="frame" x="247" y="314" width="274" height="45"/>
+                                <rect key="frame" x="247" y="306" width="274" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="11-7 impact supplement ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="Survey2Action:" destination="Y3i-KE-YZz" eventType="touchUpInside" id="4qr-ni-Ntj"/>
-                                    <segue destination="Qo6-tQ-JcR" kind="push" id="9X3-bJ-JAg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="isV-fl-7xs">
-                                <rect key="frame" x="247" y="438" width="274" height="45"/>
+                                <rect key="frame" x="247" y="405" width="274" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="11-7 follow up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,6 +128,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mY2-QF-Qep">
+                                <rect key="frame" x="344" y="870" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="wat do">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qo6-tQ-JcR" kind="push" id="Jbk-ZG-QTM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -138,483 +146,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g51-a0-hCu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="989" y="-239"/>
-        </scene>
-        <!--Parents Surveys View Controller-->
-        <scene sceneID="m7k-yQ-1aE">
-            <objects>
-                <viewController id="kJ9-JC-0Ql" customClass="ParentsSurveysViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="J5f-A9-mtT">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Parent Survey Follow Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="czO-YF-KBI">
-                                <rect key="frame" x="28" y="21" width="189" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DBs-yu-wz9">
-                                <rect key="frame" x="536" y="342" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction100:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="d6D-FW-L6y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OHW-S0-1Oq">
-                                <rect key="frame" x="614" y="342" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction110:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="kbk-CT-Ni9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xnm-uz-FOh">
-                                <rect key="frame" x="694" y="342" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction111:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="eD6-Lj-XXZ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not True" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LfT-zD-uw4">
-                                <rect key="frame" x="531" y="280" width="39" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Somewhat True" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ozd-LO-ErH">
-                                <rect key="frame" x="580" y="277" width="87" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Certainly True" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YV3-1U-SNM">
-                                <rect key="frame" x="666" y="277" width="89" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Strength and Diffculties Questionaire" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vKJ-XK-tpb">
-                                <rect key="frame" x="445" y="21" width="277" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WVU-PN-SWI">
-                                <rect key="frame" x="28" y="96" width="642" height="92"/>
-                                <string key="text">For each item, please mark the box for Not True, Somewhat True and certaintly True. It would help us if you answered all items as best you can even if you are not absolutely certain. Please give your answers on the basis of your child's behaviour over the last month.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Considerate of other people's feelings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dfc-Za-izO">
-                                <rect key="frame" x="28" y="351" width="285" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Restless, overactive, cannot stay still for long" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vOz-md-mls">
-                                <rect key="frame" x="28" y="409" width="340" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Often complains of headaches, stomach-aches or sickness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7aO-Mv-awh">
-                                <rect key="frame" x="28" y="472" width="445" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shares readily with other children, for example toys, treats, pencils" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8l6-pd-GtO">
-                                <rect key="frame" x="28" y="535" width="500" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Often loses temper" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o10-QN-jxk">
-                                <rect key="frame" x="28" y="595" width="144" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rather solitary, prefers to play alone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f8B-Ms-xnR">
-                                <rect key="frame" x="28" y="658" width="274" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Generally well behaved, usually does what adults request" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vyp-Mu-ACd">
-                                <rect key="frame" x="28" y="721" width="433" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Pb-c8-kFd">
-                                <rect key="frame" x="536" y="405" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction200:" destination="kJ9-JC-0Ql" eventType="touchDragInside" id="gEp-Ht-tKy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zO4-Wx-egH">
-                                <rect key="frame" x="614" y="405" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction220:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="oTc-kW-edm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Isx-ye-48u">
-                                <rect key="frame" x="694" y="405" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction222:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="h9C-7G-n8D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9bl-oG-Ng9">
-                                <rect key="frame" x="536" y="468" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction300:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="oSv-tf-7Ob"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jhE-Gx-IUc">
-                                <rect key="frame" x="614" y="468" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction330:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="bgm-0x-dOM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vvp-H7-JhZ">
-                                <rect key="frame" x="694" y="468" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction333:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="EMY-iE-cgh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="adr-Ag-sTA">
-                                <rect key="frame" x="536" y="531" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction400:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="QJc-ca-ACy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pXO-0n-Ovg">
-                                <rect key="frame" x="614" y="531" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction440:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="hDR-bf-wjI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ANf-vv-LcP">
-                                <rect key="frame" x="694" y="531" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction444:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="GN0-rL-lMf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dgR-cy-WsG">
-                                <rect key="frame" x="536" y="591" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction500:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="YtA-OB-xka"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ptz-W0-t5y">
-                                <rect key="frame" x="614" y="591" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction550:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="7b1-T5-qYj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GfX-31-1Yg">
-                                <rect key="frame" x="694" y="591" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction555:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="gl3-LI-FVc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IGb-kn-h7u">
-                                <rect key="frame" x="536" y="654" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction600:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="ANe-qT-DvJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3NU-QI-dxo">
-                                <rect key="frame" x="614" y="654" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction660:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Wr2-z1-hT8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qf1-tK-83g">
-                                <rect key="frame" x="694" y="654" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction666:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="zZ9-br-k1R"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ayU-a6-EfT">
-                                <rect key="frame" x="536" y="717" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction700:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Dx2-Ac-lz6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4fL-Cf-4fS">
-                                <rect key="frame" x="614" y="717" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction770:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="DHM-cH-dKq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cdV-bW-gc0">
-                                <rect key="frame" x="694" y="717" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction777:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="8Td-ui-1bI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Many worries or often seems worried" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XEw-Jw-nmD">
-                                <rect key="frame" x="25" y="787" width="279" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MPX-hC-Ihl">
-                                <rect key="frame" x="536" y="783" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction800:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Umk-lW-eVO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WRu-ww-sHp">
-                                <rect key="frame" x="614" y="783" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction880:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="2JZ-yi-z4z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bv5-Xe-kTY">
-                                <rect key="frame" x="694" y="783" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="Very-Basic-Unchecked-checkbox-icon.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkboxAction888:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="xJD-MW-nTN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Of-eZ-RvQ">
-                                <rect key="frame" x="614" y="897" width="114" height="44"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextButton:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="yLh-Hf-9CF"/>
-                                </connections>
-                            </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.10000000149011612" id="CZT-2K-M8D">
-                                <rect key="frame" x="25" y="986" width="703" height="2"/>
-                            </progressView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="PGC-Mf-oKg"/>
-                    <connections>
-                        <outlet property="checkbox100" destination="DBs-yu-wz9" id="D5A-ea-Gtk"/>
-                        <outlet property="checkbox110" destination="OHW-S0-1Oq" id="Lam-ao-owI"/>
-                        <outlet property="checkbox111" destination="xnm-uz-FOh" id="DL4-r5-VBf"/>
-                        <outlet property="checkbox200" destination="1Pb-c8-kFd" id="Tic-Nd-aEb"/>
-                        <outlet property="checkbox220" destination="zO4-Wx-egH" id="7c9-eq-Fdq"/>
-                        <outlet property="checkbox222" destination="Isx-ye-48u" id="2JU-fI-0y0"/>
-                        <outlet property="checkbox300" destination="9bl-oG-Ng9" id="LDH-EN-6nc"/>
-                        <outlet property="checkbox330" destination="jhE-Gx-IUc" id="Xyu-h2-kOw"/>
-                        <outlet property="checkbox333" destination="vvp-H7-JhZ" id="yd5-8K-CC3"/>
-                        <outlet property="checkbox400" destination="adr-Ag-sTA" id="MLo-Lh-Cqa"/>
-                        <outlet property="checkbox440" destination="pXO-0n-Ovg" id="hRB-pA-Qfo"/>
-                        <outlet property="checkbox444" destination="ANf-vv-LcP" id="oXx-Ep-k17"/>
-                        <outlet property="checkbox500" destination="dgR-cy-WsG" id="3mh-Az-ZRV"/>
-                        <outlet property="checkbox550" destination="ptz-W0-t5y" id="OSe-8M-adt"/>
-                        <outlet property="checkbox555" destination="GfX-31-1Yg" id="ECb-Db-IjW"/>
-                        <outlet property="checkbox600" destination="IGb-kn-h7u" id="M72-aC-sIW"/>
-                        <outlet property="checkbox660" destination="3NU-QI-dxo" id="75q-u2-Hma"/>
-                        <outlet property="checkbox666" destination="qf1-tK-83g" id="idf-c7-XLF"/>
-                        <outlet property="checkbox700" destination="ayU-a6-EfT" id="L9i-Jy-ehf"/>
-                        <outlet property="checkbox770" destination="4fL-Cf-4fS" id="QSW-yS-9eZ"/>
-                        <outlet property="checkbox777" destination="cdV-bW-gc0" id="hWP-zO-5Qy"/>
-                        <outlet property="checkbox800" destination="MPX-hC-Ihl" id="fhS-Nx-NUy"/>
-                        <outlet property="checkbox880" destination="WRu-ww-sHp" id="LkM-Pd-P8e"/>
-                        <outlet property="checkbox888" destination="bv5-Xe-kTY" id="Ncx-jO-62W"/>
-                        <outlet property="nextButton" destination="1Of-eZ-RvQ" id="s0o-un-0Di"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="soJ-h2-k40" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="34" y="1123"/>
         </scene>
         <!--Parents41 View Controller-->
         <scene sceneID="kl5-We-uqi">
@@ -640,9 +171,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction100:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="mfO-pZ-OEP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sxS-zF-pSn">
                                 <rect key="frame" x="616" y="356" width="34" height="30"/>
@@ -654,9 +182,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction110:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="eSf-qC-0kr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Cf-8t-NYQ">
                                 <rect key="frame" x="696" y="356" width="34" height="30"/>
@@ -668,9 +193,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction111:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="51X-df-cpF"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not True" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EeO-Dw-d4m">
                                 <rect key="frame" x="533" y="294" width="39" height="43"/>
@@ -736,9 +258,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction200:" destination="kJ9-JC-0Ql" eventType="touchDragInside" id="AoE-6y-4oh"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0wv-v6-DT5">
                                 <rect key="frame" x="616" y="419" width="34" height="30"/>
@@ -750,9 +269,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction220:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="0lY-Dd-c9h"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jZX-38-BJP">
                                 <rect key="frame" x="696" y="419" width="34" height="30"/>
@@ -764,9 +280,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction222:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Ubg-v5-sv8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nXn-wN-yg7">
                                 <rect key="frame" x="538" y="482" width="34" height="30"/>
@@ -778,9 +291,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction300:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="HDy-WY-qRn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zrU-9j-wCw">
                                 <rect key="frame" x="616" y="482" width="34" height="30"/>
@@ -792,9 +302,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction330:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="OSD-ZW-giA"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PfI-uY-OV3">
                                 <rect key="frame" x="696" y="482" width="34" height="30"/>
@@ -806,9 +313,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction333:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="BEO-Ll-kX1"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="401" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MIe-Ew-EgG">
                                 <rect key="frame" x="538" y="545" width="34" height="30"/>
@@ -820,9 +324,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction400:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="bez-u8-Sk2"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="402" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qK1-W8-ga5">
                                 <rect key="frame" x="616" y="545" width="34" height="30"/>
@@ -834,9 +335,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction440:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="yP8-7i-zvy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="403" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Qf-rd-0qR">
                                 <rect key="frame" x="696" y="545" width="34" height="30"/>
@@ -848,9 +346,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction444:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="iA7-eT-zAm"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rRS-Vs-yMu">
                                 <rect key="frame" x="538" y="605" width="34" height="30"/>
@@ -862,9 +357,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction500:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="7i1-hw-BqQ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z5R-lK-tDQ">
                                 <rect key="frame" x="616" y="605" width="34" height="30"/>
@@ -876,9 +368,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction550:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="PCV-eZ-IRX"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="503" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ll6-Mb-vKm">
                                 <rect key="frame" x="696" y="605" width="34" height="30"/>
@@ -890,9 +379,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction555:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Tch-T2-HLs"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Would rather be alone than with other youth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5hh-VL-zt3">
                                 <rect key="frame" x="30" y="666" width="386" height="21"/>
@@ -925,9 +411,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction200:" destination="kJ9-JC-0Ql" eventType="touchDragInside" id="JlF-9Q-pCf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="602" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Oo2-4n-3MH">
                                 <rect key="frame" x="616" y="667" width="34" height="30"/>
@@ -939,9 +422,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction220:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Pam-ei-jPG"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="603" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a4U-gj-NQb">
                                 <rect key="frame" x="696" y="667" width="34" height="30"/>
@@ -953,9 +433,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction222:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="mEi-0Y-0Ok"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="701" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2G5-qq-TS3">
                                 <rect key="frame" x="538" y="730" width="34" height="30"/>
@@ -967,9 +444,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction300:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="rmb-Cp-7Or"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="702" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dKr-zb-KwA">
                                 <rect key="frame" x="616" y="730" width="34" height="30"/>
@@ -981,9 +455,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction330:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="AXe-Pe-GgN"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="703" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mI1-Hj-4PS">
                                 <rect key="frame" x="696" y="730" width="34" height="30"/>
@@ -995,9 +466,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction333:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="hhG-oE-JNr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="801" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qb2-rx-Zxq">
                                 <rect key="frame" x="538" y="793" width="34" height="30"/>
@@ -1009,9 +477,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction400:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Jdg-Tg-ZHu"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="802" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7BF-BU-XDS">
                                 <rect key="frame" x="616" y="793" width="34" height="30"/>
@@ -1023,9 +488,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction440:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="SmD-0s-JFa"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="803" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hNH-df-URA">
                                 <rect key="frame" x="696" y="793" width="34" height="30"/>
@@ -1037,9 +499,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction444:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="6h9-J9-Xdj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="anP-ZT-CqM">
                                 <rect key="frame" x="616" y="899" width="114" height="44"/>
@@ -1047,9 +506,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="0dn-5l-Eob"/>
                                     <action selector="nextButton:" destination="Qo6-tQ-JcR" eventType="touchUpInside" id="SYZ-Nh-gTV"/>
-                                    <segue destination="cIq-HV-Ji8" kind="push" id="7r9-aA-m2i"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Shares readily with other youths, for example books, games and food " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fIZ-U4-OwA">
@@ -1078,12 +535,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WAT DO" borderStyle="roundedRect" minimumFontSize="17" id="JQw-hm-Q2Q">
-                                <rect key="frame" x="328" y="314" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IoP-ze-qWH">
                                 <rect key="frame" x="78" y="909" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1104,9 +555,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction100:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="szy-Bj-wng"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hAS-9B-PXx">
                                 <rect key="frame" x="619" y="308" width="34" height="30"/>
@@ -1118,9 +566,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction110:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="DQj-h8-LQa"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHz-ur-Bwj">
                                 <rect key="frame" x="699" y="308" width="34" height="30"/>
@@ -1132,9 +577,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction111:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="vWa-5I-KRe"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not True" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aKK-i9-4oX">
                                 <rect key="frame" x="536" y="246" width="39" height="43"/>
@@ -1188,9 +630,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction200:" destination="kJ9-JC-0Ql" eventType="touchDragInside" id="D81-Si-5D9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tEQ-4A-Pu2">
                                 <rect key="frame" x="619" y="371" width="34" height="30"/>
@@ -1202,9 +641,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction220:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Uxb-bc-ebr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Yh-el-Zeb">
                                 <rect key="frame" x="699" y="371" width="34" height="30"/>
@@ -1216,9 +652,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction222:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="CGu-DK-jKZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bpi-cP-Pl4">
                                 <rect key="frame" x="541" y="434" width="34" height="30"/>
@@ -1230,9 +663,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction300:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="LPr-Dg-HRK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="302" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wac-gb-oHh">
                                 <rect key="frame" x="619" y="434" width="34" height="30"/>
@@ -1244,9 +674,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction330:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="6b7-Kf-GVb"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="303" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wel-Ow-ibi">
                                 <rect key="frame" x="699" y="434" width="34" height="30"/>
@@ -1258,9 +685,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction333:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="46k-dE-KMy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="401" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hi1-S8-UQO">
                                 <rect key="frame" x="541" y="497" width="34" height="30"/>
@@ -1272,9 +696,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction400:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="gtU-4A-IST"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="402" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aX5-iZ-Adm">
                                 <rect key="frame" x="619" y="497" width="34" height="30"/>
@@ -1286,9 +707,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction440:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Yoj-uk-nsU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="403" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RVm-NU-Lxs">
                                 <rect key="frame" x="699" y="497" width="34" height="30"/>
@@ -1300,9 +718,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction444:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="kry-lG-kVv"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O1E-Tf-N5T">
                                 <rect key="frame" x="541" y="557" width="34" height="30"/>
@@ -1314,9 +729,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction500:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="RIB-hH-UNs"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l6I-MI-gc7">
                                 <rect key="frame" x="619" y="557" width="34" height="30"/>
@@ -1328,9 +740,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction550:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="taz-SE-i9I"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="503" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ARJ-sx-kQN">
                                 <rect key="frame" x="699" y="557" width="34" height="30"/>
@@ -1342,9 +751,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction555:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="KsF-ge-xme"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Would rather be alone than with other youth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h1O-kA-ZLD">
                                 <rect key="frame" x="33" y="618" width="386" height="21"/>
@@ -1374,9 +780,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction200:" destination="kJ9-JC-0Ql" eventType="touchDragInside" id="LbZ-FN-nhE"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="602" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aHd-RP-2t9">
                                 <rect key="frame" x="619" y="619" width="34" height="30"/>
@@ -1388,9 +791,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction220:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="Zmw-cP-SJS"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="603" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EQG-BS-OJ7">
                                 <rect key="frame" x="699" y="619" width="34" height="30"/>
@@ -1402,9 +802,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction222:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="fDU-mj-esY"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="701" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kxu-Gv-PHU">
                                 <rect key="frame" x="541" y="682" width="34" height="30"/>
@@ -1416,9 +813,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction300:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="PK9-hb-whL"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="702" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jGn-4M-zhQ">
                                 <rect key="frame" x="619" y="682" width="34" height="30"/>
@@ -1430,9 +824,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction330:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="HoH-ZH-CRP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="703" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Af-9E-qOP">
                                 <rect key="frame" x="699" y="682" width="34" height="30"/>
@@ -1444,9 +835,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction333:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="F9x-5c-opk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="801" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bXN-pL-Dzs">
                                 <rect key="frame" x="541" y="745" width="34" height="30"/>
@@ -1458,9 +846,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction400:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="tUR-jA-aXf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="802" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Tk-gK-reB">
                                 <rect key="frame" x="619" y="745" width="34" height="30"/>
@@ -1472,9 +857,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction440:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="8SS-WF-H1A"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="803" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XF8-Rv-MRb">
                                 <rect key="frame" x="699" y="745" width="34" height="30"/>
@@ -1486,9 +868,6 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="checkboxAction444:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="BEU-mL-kxH"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="woZ-iP-3Ck">
                                 <rect key="frame" x="619" y="851" width="114" height="44"/>
@@ -1496,7 +875,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="kJ9-JC-0Ql" eventType="touchUpInside" id="dLK-F0-nnG"/>
                                     <action selector="nextButton:" destination="Qo6-tQ-JcR" eventType="touchUpInside" id="ebq-Es-j3B"/>
                                 </connections>
                             </button>
@@ -1565,77 +943,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
-        <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
         <image name="Very-Basic-Unchecked-checkbox-icon.png" width="512" height="512"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

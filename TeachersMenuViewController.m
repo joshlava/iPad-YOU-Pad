@@ -1,5 +1,5 @@
 //
-//  parentMenuViewController.m
+//  TeacherMenuViewController.m
 //  iPad-YOU-Pad
 //
 //  Created by Yuki Robson on 3/10/13.
@@ -7,7 +7,7 @@
 //
 
 #import "TeachersMenuViewController.h"
-#import "TeachersSurveysViewController.h"
+//#import "TeachersSurveysViewController.h"
 
 int surveyNum;
 

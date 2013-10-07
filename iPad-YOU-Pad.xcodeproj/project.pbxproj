@@ -34,7 +34,6 @@
 		A2E0DC5717FD168B004E7327 /* TeachersSurveys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */; };
 		A2E0DC5A17FD17DD004E7327 /* EducatorSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */; };
 		A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */; };
-		A2E0DC6017FD182D004E7327 /* TeachersSurveysViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */; };
 		DE1BAFCC17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */; };
 		DE1BAFCD17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */; };
 		DE1BAFD017FD35DC00802872 /* TeachersMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */; };
@@ -90,8 +89,6 @@
 		A2E0DC5917FD17DD004E7327 /* EducatorSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducatorSurveysViewController.m; sourceTree = "<group>"; };
 		A2E0DC5B17FD17FC004E7327 /* CompletedSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedSurveysViewController.h; sourceTree = "<group>"; };
 		A2E0DC5C17FD17FC004E7327 /* CompletedSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedSurveysViewController.m; sourceTree = "<group>"; };
-		A2E0DC5E17FD182D004E7327 /* TeachersSurveysViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersSurveysViewController.h; sourceTree = "<group>"; };
-		A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeachersSurveysViewController.m; sourceTree = "<group>"; };
 		DE1BAFCA17FD30CD00802872 /* Very-Basic-Checked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Checked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
 		DE1BAFCB17FD30CD00802872 /* Very-Basic-Unchecked-checkbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Very-Basic-Unchecked-checkbox-icon.png"; sourceTree = SOURCE_ROOT; };
 		DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeachersMenuViewController.h; sourceTree = "<group>"; };
@@ -229,8 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				A2E0DC5617FD168B004E7327 /* TeachersSurveys.storyboard */,
-				A2E0DC5E17FD182D004E7327 /* TeachersSurveysViewController.h */,
-				A2E0DC5F17FD182D004E7327 /* TeachersSurveysViewController.m */,
 				DE1BAFCE17FD35DC00802872 /* TeachersMenuViewController.h */,
 				DE1BAFCF17FD35DC00802872 /* TeachersMenuViewController.m */,
 				DE1BAFD317FD5D3800802872 /* Teachers0ViewController.h */,
@@ -388,7 +383,6 @@
 			files = (
 				0E8675981801DD22002113C6 /* TeachersSurvey2ViewController.m in Sources */,
 				A26E6A9017FC4D04006C9456 /* MainMenuViewController.m in Sources */,
-				A2E0DC6017FD182D004E7327 /* TeachersSurveysViewController.m in Sources */,
 				A26E6A8A17FC4D04006C9456 /* AppDelegate.m in Sources */,
 				A289646417FD257B0071FC46 /* SettingsViewController.m in Sources */,
 				A2E0DC5D17FD17FC004E7327 /* CompletedSurveysViewController.m in Sources */,
